@@ -30,7 +30,7 @@ body.AR-container {
   font-family: sans-serif;
   color: #fff;
   text-transform: uppercase;
-  background-image: url(/asset/metaversebg.jpg);
+  background-image: url(./asset/metaversebg.jpg);
   background-position: center;
   background-size: cover;
   transition: all 1s ease-out;
