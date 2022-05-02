@@ -1,0 +1,243 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: "Lato";
+  background-color: #232323;
+}
+
+
+
+body.AR-container {
+  margin : 0px; 
+  overflow: hidden;
+  background-color: none;
+}
+
+#splash {
+  position: fixed;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  justify-content: flex-end;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  background-image: url(/asset/metaversebg.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: all 1s ease-out;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#splash .loading {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 0.25rem solid rgba(255, 255, 255, 0.2);
+  border-top-color: #fff;
+  animation: spin 1s infinite linear;
+}
+
+#splash .start-button {
+  padding: 25px 25px;
+  border-radius: 60px;
+  opacity: 0;
+  transition: opacity .5s ease;
+  cursor: pointer;
+  background-color: #292929;
+  letter-spacing: 1px;
+}
+
+#splash .credits {
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+  
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+#splash .credits .show-credits {
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+#splash .credits ul {
+  display: none;
+  max-height: 200px;
+  list-style: none;
+  margin-top: 1em;
+  line-height: 1.5;
+  padding: 0;
+  overflow-y: scroll;
+  text-transform: capitalize;
+}
+
+#splash .credits a {
+  color: #a2a2a2;
+  text-decoration: none;
+}
+
+#splash .credits a:visited {
+  color: #a2a2a2;
+}
+
+#splash .credits a:hover, #splash .credits a:visited:hover {
+  color: #f2f2f2;
+}
+
+#anchor-scene-button {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: rgba(255, 255, 266, 0.8);
+  background-image: url('rotate-anchor.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#rotate-scene-button {
+  display: none;
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: rgba(255, 255, 266, 0.8);
+  background-image: url('rotate-y.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+
+.modal-body {
+  background: white;
+}
+
+.modal.modal-fullscreen .modal-dialog,
+.modal.modal-fullscreen .modal-content {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: white;
+}
+.modal.modal-fullscreen .modal-dialog {
+  margin: 0;
+  width: 100%;
+  animation-duration: 0.6s;
+}
+.modal.modal-fullscreen .modal-content {
+  border: none;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inherit;
+  -moz-box-shadow: inherit;
+  -o-box-shadow: inherit;
+  box-shadow: inherit;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-body {
+  padding: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header,
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header {
+  top: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+  bottom: 0;
+}
+
+.col-xs-12 {
+  background-color: white;
+}
+
+.col-md-12-button {
+  margin-top: 10px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.social a {
+  padding: 0 .5em;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration:none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #ffffff;
+  color: #345e7d;
+}
+
+.fa-twitter {
+  background: #ffffff;
+  color: #345e7d;
+}
+
+.fa-linkedin {
+  background: #ffffff;
+  color: #345e7d;
+}
+
+.fa-youtube {
+  background: #ffffff;
+  color: #345e7d;
+}
+
+.fa-instagram {
+  background: #ffffff;
+  color: #345e7d;
+}
+
+.logo-container{
+  max-width: 125px; 
+  padding-top: inherit;
+}
