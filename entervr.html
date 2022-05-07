@@ -1,0 +1,1441 @@
+<html>
+  <head>
+    
+<!-- aframe -->
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@0d23f9b21c33ab6821046ce95835492cb84996c5/dist/aframe-master.min.js"></script>
+    
+    <!-- third party -->
+
+    <script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframe-blink-controls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.controls.min.js"></script>
+    <!-- <script src="javascript/handy-controls.js"></script> -->
+    
+
+    <!-- custom javascript -->    
+    <script src="https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js"></script>
+    <script src="ar-shadow-helper.js"></script>
+    <script src="ar-cursor.js"></script>
+    
+    <script src="model-utils.js"></script>
+    <script src="magnet-helpers.js"></script>
+
+    <script src="enable-interaction.js"></script>
+    <script src="aframe-onload-move-camera.js"></script>
+
+    <script src="simple-navmesh.js"></script>
+    
+    
+<!-- jquery -->
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+
+    <!-- boostrap -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+
+    
+    <!-- css + javascript splash animation -->
+<link href="style.css" rel="stylesheet">
+<script src="main.js"></script>
+    
+
+    <title>Web3 Pride n Joy</title>
+    <meta property="og:title" content="Web 3 Pride n Joy" />
+    <meta name="twitter:card" content="Web 3 Pride n Joy" />
+    <meta name="twitter:site" content="@pridenjoyco" />
+    <meta name="twitter:creator" content="@pridenjoyco" />
+    <meta property="og:url" content="https:/web3.pridenjoyco.id/" />
+    <meta name="description" content="Web 3 Pride n Joy" />
+    <meta property="og:description" content="Web 3 Pride n Joy" />
+    <meta property="og:image" content="./asset/metaversebg.jpg" />
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+
+  </head>
+  
+  <body>
+
+<!-- splash screen -->
+<div id="splash">
+      
+  <h2> Welcome To Pride N Joy Metastore </h2>
+  <div class="instructions">
+    <h4> Instructions Move Using WASD </h4>
+    </div>
+  <div class="loading">
+  </div>
+  
+  <div class="row">
+      <div class="col-xs-12 col-sm-5 col-md-4">
+  <div class="start-button" style="text-align: center; margin-bottom: 0.5vh;">Start To Enter Room</div>
+</div>
+  <div class="col-xs-12 col-sm-4 col-md-3">
+  <div class="start-button-vr" style="text-align: center;">
+      <a class="btn btn-link" style="color: #ffffff;" href="index.html" role="button">back to Metastore</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- end -->
+
+<!-- navmesh constraint -->
+
+    <a-scene
+		background="color:skyblue;"
+            reflection="directionalLight:#dirlight;"
+		shadow="type: pcfsoft"
+		gltf-model="dracoDecoderPath: https://cdn.jsdelivr.net/npm/three@0.129.0/examples/js/libs/draco/gltf/;"
+            exposure="1.5"
+            stats = "false" environment="lighting:false;shadow:true;preset:tron;"
+            
+    >
+    <a-entity id="kameraRig" 
+    position="-3.098 1 -3.248"
+    movement-controls="speed: 0.090"
+    onload-move-camera>
+            <a-entity  id="camera"
+            camera
+            look-controls="pointerLockEnabled: false"
+            position="-3.098 1 -3.248"
+            cursor="rayOrigin: mouse"
+            simple-navmesh-constraint="navmesh:.navmesh;fall:0.5;height:1.6;"
+            > </a-entity>
+            
+      </a-entity>
+    
+      <a-gltf-model class="navmesh" src="#navmesh-glb" visible="false" position="0 0 0" ></a-gltf-model>
+            
+            
+      <a-gltf-model src="#building-glb"
+      id="building"
+      
+      depthwrite="true"
+      window-replace="Glass"
+      no-tonemapping="Light"
+      shadow="cast:false;receive:true;"
+      position="0 1 0"
+    ></a-gltf-model>
+    <a-entity hide-on-enter-ar rotation="0 -45 0" position="0 0 0"></a-entity>    
+
+      <!-- end -->
+
+
+
+      <!-- asset -->
+      <a-assets>
+        
+        <!-- Building -->
+       
+        
+            <a-asset-item id="building-glb" src="./asset/basebuilding.glb"></a-asset-item>
+            <a-asset-item id="navmesh-glb" src="./asset/navmesh.glb"></a-asset-item>
+        
+              
+            <!-- Lantai 1  -->
+              <!-- Asset customer Service  -->
+              
+          <a-asset-item id="komputer" src="./asset/monitor/komputer.glb" ></a-asset-item>
+          <a-asset-item id="bank_payment" src="./asset/monitor/bank_payment.glb"></a-asset-item>
+          <a-asset-item id="crypto_payment" src="./asset/monitor/crypto_payment.glb"></a-asset-item>
+          <a-asset-item id="fast_pants" src="./asset/monitor/fast_pants.glb"></a-asset-item>        
+      
+        <!-- Asset Social Media  -->
+      
+          <a-asset-item id="facebook" src="./asset/sosmed/facebook.glb"></a-asset-item>
+          <a-asset-item id="instagram" src="./asset/sosmed/instagram.glb"></a-asset-item>
+          <a-asset-item id="lazada" src="./asset/sosmed/lazada.glb"></a-asset-item>
+          <a-asset-item id="shopee" src="./asset/sosmed/shopee.glb"></a-asset-item>
+          <a-asset-item id="tiktok" src="./asset/sosmed/tiktok.glb"></a-asset-item>
+          <a-asset-item id="twitter" src="./asset/sosmed/twitter.glb"></a-asset-item>
+          <a-asset-item id="web" src="./asset/sosmed/web.glb"></a-asset-item>
+          <a-asset-item id="youtube" src="./asset/sosmed/youtube.glb"></a-asset-item>
+          
+        <!-- Denim -->
+      
+          <a-asset-item id="crow1" src="./asset/denim/crow1.glb"></a-asset-item>
+          <a-asset-item id="crow2" src="./asset/denim/crow2.glb"></a-asset-item>
+          <a-asset-item id="crow3" src="./asset/denim/crow3.glb"></a-asset-item>
+          <a-asset-item id="inariblack1" src="./asset/denim/inariblck1.glb"></a-asset-item>
+          <a-asset-item id="inariblack2" src="./asset/denim/inariblck2.glb"></a-asset-item>
+          <a-asset-item id="inariblack3" src="./asset/denim/inariblck3.glb"></a-asset-item>
+          <a-asset-item id="inariblack_manekin" src="./asset/denim/inariblck_manekin.glb"></a-asset-item>
+          <a-asset-item id="jack_o_1" src="./asset/denim/jack_o_1.glb"></a-asset-item>
+          <a-asset-item id="jack_o_2" src="./asset/denim/jack_o_2.glb"></a-asset-item>
+          <a-asset-item id="jack_o_3" src="./asset/denim/jack_o_3.glb"></a-asset-item>
+          <a-asset-item id="jack_o_manekin" src="./asset/denim/jack_o_manekin.glb"></a-asset-item>
+          <a-asset-item id="koji1" src="./asset/denim/koji1.glb"></a-asset-item>        
+          <a-asset-item id="koji2" src="./asset/denim/koji2.glb"></a-asset-item>
+          <a-asset-item id="zeldris1" src="./asset/denim/zeldris1.glb"></a-asset-item>        
+          <a-asset-item id="zeldris2" src="./asset/denim/zeldris2.glb"></a-asset-item>
+          <a-asset-item id="zeldris_manekin" src="./asset/denim/zeldris_manekin.glb"></a-asset-item>        
+      
+        <!-- Chino -->
+      
+          <a-asset-item id="chinoblack1" src="./asset/chino/chinoblack1.glb"></a-asset-item>
+          <a-asset-item id="chinoblack2" src="./asset/chino/chinoblack2.glb"></a-asset-item>
+          <a-asset-item id="chinoblack_manekin" src="./asset/chino/chinoblack_manekin.glb"></a-asset-item>
+          <a-asset-item id="chinocream1" src="./asset/chino/chinocream1.glb"></a-asset-item>
+          <a-asset-item id="chinocream2" src="./asset/chino/chinocream2.glb"></a-asset-item>
+          <a-asset-item id="chinogreen1" src="./asset/chino/chinogreen1.glb"></a-asset-item>
+          <a-asset-item id="chinogreen2" src="./asset/chino/chinogreen2.glb"></a-asset-item>
+          <a-asset-item id="chinogreen_manekin" src="./asset/chino/chinogreen_manekin.glb"></a-asset-item>
+          <a-asset-item id="chinogrey1" src="./asset/chino/chinogrey1.glb"></a-asset-item>
+          <a-asset-item id="chinogrey2" src="./asset/chino/chinogrey2.glb"></a-asset-item>
+          <a-asset-item id="chinokhaki1" src="./asset/chino/chinokhaki1.glb"></a-asset-item>
+          <a-asset-item id="chinokhaki2" src="./asset/chino/chinokhaki2.glb"></a-asset-item>        
+          <a-asset-item id="chinokhaki_manekin" src="./asset/chino/chinokhaki_manekin.glb"></a-asset-item>
+          <a-asset-item id="chinonavy" src="./asset/chino/chinonavy1.glb"></a-asset-item>
+      
+        <!-- Cargo -->
+      
+          <a-asset-item id="cargoblack" src="./asset/cargo/cargoblack.glb"></a-asset-item>
+          <a-asset-item id="cargogreen" src="./asset/cargo/cargogreen.glb"></a-asset-item>
+          <a-asset-item id="cargogreen_manekin" src="./asset/cargo/cargogreen_manekin.glb"></a-asset-item>
+          <a-asset-item id="cargogreen_twotone" src="./asset/cargo/cargogreen_twtn.glb"></a-asset-item>
+          <a-asset-item id="cargogrey" src="./asset/cargo/cargogrey.glb"></a-asset-item>
+          <a-asset-item id="cargokhaki" src="./asset/cargo/cargokhaki.glb"></a-asset-item>
+          <a-asset-item id="cargokhaki_manekin" src="./asset/cargo/cargokhaki_manekin.glb"></a-asset-item>
+          <a-asset-item id="cargokhaki_twotone" src="./asset/cargo/cargokhaki_twtn.glb"></a-asset-item>
+      
+            <!-- end lantai 1  -->
+
+      <!-- lantai 2 -->
+        <!-- bags -->
+        <a-asset-item id="backpackarmy" src="./asset/lantai_atas/bags/backpackarmy.glb"></a-asset-item>
+        <a-asset-item id="backpackblck" src="./asset/lantai_atas/bags/backpackblck.glb"></a-asset-item>
+        <a-asset-item id="backpacknavy" src="./asset/lantai_atas/bags/backpacknavy.glb"></a-asset-item>
+        <a-asset-item id="meshminiarmy" src="./asset/lantai_atas/bags/meshminiarmy.glb"></a-asset-item>
+        <a-asset-item id="meshminiblck" src="./asset/lantai_atas/bags/meshminiblck.glb"></a-asset-item>
+        <a-asset-item id="meshmininavy" src="./asset/lantai_atas/bags/meshmininavy.glb"></a-asset-item>
+        <a-asset-item id="minibagblck" src="./asset/lantai_atas/bags/minibagblck.glb"></a-asset-item>
+        <a-asset-item id="minibagnavy" src="./asset/lantai_atas/bags/minibagnavy.glb"></a-asset-item>
+        <a-asset-item id="minibagarmy" src="./asset/lantai_atas/bags/minibagarmy.glb"></a-asset-item>
+        <a-asset-item id="weistbagarmy" src="./asset/lantai_atas/bags/weistbagarmy.glb"></a-asset-item>
+        <a-asset-item id="weistbagblck" src="./asset/lantai_atas/bags/weistbagblck.glb"></a-asset-item>
+        <a-asset-item id="weistbagnavy" src="./asset/lantai_atas/bags/weistbagnavy.glb"></a-asset-item>
+
+        <!-- hats -->
+        
+        <!-- outer -->
+        <a-asset-item id="coachjckt" src="./asset/lantai_atas/outer/coachjckt.glb"></a-asset-item>
+        <a-asset-item id="crwnckblck" src="./asset/lantai_atas/outer/crwnckblck.glb"></a-asset-item>
+        <a-asset-item id="crwnckblue" src="./asset/lantai_atas/outer/crwnckblue.glb"></a-asset-item>
+        <a-asset-item id="crwnckkhaki" src="./asset/lantai_atas/outer/crwnckkhaki.glb"></a-asset-item>
+        <a-asset-item id="crwnckred" src="./asset/lantai_atas/outer/crwnckred.glb"></a-asset-item>
+        <a-asset-item id="crwnckwth" src="./asset/lantai_atas/outer/crwnckwth.glb"></a-asset-item>
+        <a-asset-item id="hoodyarmy" src="./asset/lantai_atas/outer/hoodyarmy.glb"></a-asset-item>
+        <a-asset-item id="hoodyblck" src="./asset/lantai_atas/outer/hoodyblck.glb"></a-asset-item>
+        <a-asset-item id="hoodygrey" src="./asset/lantai_atas/outer/hoodygrey.glb"></a-asset-item>
+        <a-asset-item id="kimononavy" src="./asset/lantai_atas/outer/kimononavy.glb"></a-asset-item>
+        <a-asset-item id="kimonowabash" src="./asset/lantai_atas/outer/kimonowabash.glb"></a-asset-item>
+        <a-asset-item id="plydbomberjckt" src="./asset/lantai_atas/outer/plydbomberjckt.glb"></a-asset-item>
+        <a-asset-item id="truckerbrown" src="./asset/lantai_atas/outer/truckerbrown.glb"></a-asset-item>
+        <a-asset-item id="truckerwabash" src="./asset/lantai_atas/outer/truckerwabash.glb"></a-asset-item>
+        <a-asset-item id="truckernavy" src="./asset/lantai_atas/outer/truckernavy.glb"></a-asset-item>
+        <a-asset-item id="vest" src="./asset/lantai_atas/outer/vest.glb"></a-asset-item>
+        <a-asset-item id="workerjckt" src="./asset/lantai_atas/outer/workerjckt.glb"></a-asset-item>
+
+        <!-- shoes -->
+        <a-asset-item id="grusianhi" src="./asset/lantai_atas/shoes/grusianhi.glb"></a-asset-item>
+        <a-asset-item id="grusianlow" src="./asset/lantai_atas/shoes/grusianlow.glb"></a-asset-item>
+        <a-asset-item id="margatoehi" src="./asset/lantai_atas/shoes/margatoehi.glb"></a-asset-item>
+        <a-asset-item id="margatoelow" src="./asset/lantai_atas/shoes/margatoelow.glb"></a-asset-item>
+        <a-asset-item id="sandalarmy" src="./asset/lantai_atas/shoes/sandalarmy.glb"></a-asset-item>
+        <a-asset-item id="sandalblck" src="./asset/lantai_atas/shoes/sandalblck.glb"></a-asset-item>
+        <a-asset-item id="sandalbrown" src="./asset/lantai_atas/shoes/sandalbrown.glb"></a-asset-item>
+        <a-asset-item id="sandalgrey" src="./asset/lantai_atas/shoes/sandalgrey.glb"></a-asset-item>
+        <a-asset-item id="synomhi" src="./asset/lantai_atas/shoes/synomhi.glb"></a-asset-item>
+        
+        <!-- tshirt -->
+        <a-asset-item id="pologrey" src="./asset/lantai_atas/tshirt/pologrey.glb"></a-asset-item>
+        <a-asset-item id="polonavy" src="./asset/lantai_atas/tshirt/polonavy.glb"></a-asset-item>
+        <a-asset-item id="polored" src="./asset/lantai_atas/tshirt/polored.glb"></a-asset-item>
+        <a-asset-item id="tshirtblck" src="./asset/lantai_atas/tshirt/tshirtblck.glb"></a-asset-item>
+        <a-asset-item id="tshirtblckgambar" src="./asset/lantai_atas/tshirt/tshirtblckgambar.glb"></a-asset-item>
+        <a-asset-item id="tshirtblue" src="./asset/lantai_atas/tshirt/tshirtblue.glb"></a-asset-item>
+        <a-asset-item id="tshirtgrey" src="./asset/lantai_atas/tshirt/tshirtgrey.glb"></a-asset-item>
+        <a-asset-item id="tshirtred" src="./asset/lantai_atas/tshirt/tshirtred.glb"></a-asset-item>
+        <a-asset-item id="tshirtwth" src="./asset/lantai_atas/tshirt/tshirtwth.glb"></a-asset-item>
+        <a-asset-item id="tshirtwthgambar" src="./asset/lantai_atas/tshirt/tshirtwthgambar.glb"></a-asset-item>
+        <a-asset-item id="tshirtyellow" src="./asset/lantai_atas/tshirt/tshirtyellow.glb"></a-asset-item>
+        
+      <!-- end lantai 2 -->
+      <!-- image -->
+          
+      <img id="logo" crossorigin="anonymous" src="https://cdn.glitch.global/66fb1bb8-991e-488d-9935-31c193128819/logo.png?v=1647142753297">
+      
+            </a-assets>
+      
+            <!-- end -->
+      
+      
+      <!-- link -->
+      
+      <!-- end -->
+      
+            <!-- model building -->
+      
+         
+            
+      
+        
+      <!-- lantai 1 -->
+        <!-- model customer Service  -->   
+              
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#komputer"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+      
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#bank_payment"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+      
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#crypto_payment"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+      
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#fast_pants"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+              
+              <!-- end -->   
+                   
+          <!-- Model Social Media  -->
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#facebook"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#instagram"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#lazada"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#shopee"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#tiktok"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#twitter"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+           data-toggle=""
+           data-target=""
+           src="#web"
+           rotation="" 
+          position="0 1 0" 
+          scale="">
+         </a-gltf-model>
+
+          <a-gltf-model
+          data-toggle=""
+          data-target=""
+          src="#youtube"
+          rotation="" 
+          position="0 1 0" 
+          scale="">
+          </a-gltf-model>
+
+          <!-- Model Denim -->
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#crow1"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#crow2"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#crow3"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>          
+
+          <a-gltf-model
+                data-toggle=""
+                data-target=""
+                src="#inariblack1"
+                rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+               data-toggle=""
+               data-target=""
+               src="#inariblack2"
+               rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+               data-toggle=""
+              data-target=""
+              src="#inariblack3"
+              rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+              data-toggle=""
+              data-target=""
+              src="#inariblack_manekin"
+              rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+           data-toggle=""
+           data-target=""
+           src="#jack_o_1"
+           rotation="" 
+          position="0 1 0" 
+          scale="">
+         </a-gltf-model>
+
+          <a-gltf-model
+          data-toggle=""
+          data-target=""
+          src="#jack_o_2"
+          rotation="" 
+          position="0 1 0" 
+          scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+            data-toggle=""
+            data-target=""
+            src="#jack_o_3"
+            rotation="" 
+            position="0 1 0" 
+            scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#jack_o_manekin"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#koji1"
+                     rotation="" 
+               position="" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#koji2"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#zeldris1"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                     data-toggle=""
+                     data-target=""
+                     src="#zeldris2"
+                     rotation="" 
+               position="0 1 0" 
+               scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+           data-toggle=""
+           data-target=""
+           src="#zeldris_manekin"
+           rotation="" 
+          position="0 1 0" 
+          scale="">
+         </a-gltf-model>
+
+        <!-- model chino -->
+
+          <a-gltf-model
+           data-toggle=""
+           data-target=""
+           src="#chinoblack1"
+           rotation="" 
+           position="0 1 0" 
+           scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#chinoblack2"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+              data-toggle=""
+              data-target=""
+              src="#chinoblack_manekin"
+              rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+              data-toggle=""
+              data-target=""
+              src="#chinocream1"
+              rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+              data-toggle=""
+            data-target=""
+            src="#chinocream2"
+            rotation="" 
+            position="0 1 0" 
+            scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+            data-toggle=""
+            data-target=""
+            src="#chinogreen1"
+            rotation="" 
+            position="0 1 0" 
+            scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+          data-toggle=""
+          data-target=""
+          src="#chinogreen2"
+          rotation="" 
+          position="0 1 0" 
+          scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+          data-toggle=""
+          data-target=""
+          src="#chinogreen_manekin"
+          rotation="" 
+          position="0 1 0" 
+          scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#chinogrey1"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#chinogrey2"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#chinokhaki1"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#chinokhaki2"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#chinokhaki_manekin"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#chinonavy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+        <!-- model cargo -->
+          <a-gltf-model
+                    data-toggle="modal"
+                    data-target="#cargo_black"
+                    src="#cargoblack"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle="modal"
+                    data-target="#cargo_green"
+                    src="#cargogreen"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle="modal"
+                    data-target="#cargo_greenmanekin"
+                    src="#cargogreen_manekin"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#cargogreen_twotone"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>  
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#cargogrey"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#cargokhaki"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#cargokhaki_manekin"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#cargokhaki_twotone"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>          
+            <!-- end -->
+          
+          <!-- lantai 2 -->
+            <!--model bags  -->
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#backpackarmy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model> 
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#backpackblck"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#backpacknavy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>           
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#meshminiarmy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model> 
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#meshminiblck"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#meshmininavy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model> 
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#minibagblck"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model> 
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#minibagarmy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#minibagnavy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#weistbagarmy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model> 
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#weistbagblck"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model> 
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#weistbagnavy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <!-- model hats-->
+
+          <!-- model outer -->
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#coachjckt"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#crwnckblck"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#crwnckblue"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#crwnckkhaki"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#crwnckred"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#crwnckwth"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#hoodyarmy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#hoodyblck"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#hoodygrey"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model> 
+          
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#kimononavy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#kimonowabash"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#plydbomberjckt"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#truckerbrown"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#truckernavy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#truckerwabash"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#vest"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#workerjckt"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <!-- model shoes -->
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#grusianhi"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#grusianlow"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#margatoehi"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#margatoelow"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#sandalarmy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#sandalblck"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#sandalbrown"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#sandalgrey"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#synomhi"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <!-- model tshirt -->
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#pologrey"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#polonavy"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#polored"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#tshirtblck"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#tshirtblckgambar"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#tshirtblue"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#tshirtgrey"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#tshirtred"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+          
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#tshirtwth"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#tshirtwthgambar"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+                    data-toggle=""
+                    data-target=""
+                    src="#tshirtyellow"
+                    rotation="" 
+              position="0 1 0" 
+              scale="">
+          </a-gltf-model>                 
+          
+            <!-- model lain-lain-->
+              <a-image id="image"
+                       data-toggle="modal"
+                       data-target="#modal1" 
+                      src="#logo" rotation="0 -90 0" position="-0.98526 1.4 -0.01474" scale="0.5 0.5 0.5"></a-image>
+           
+            </a-entity>
+      
+          <a-light id="dirlight" light="type: ambient" intensity="1.2" ></a-light>
+      
+
+
+      <!-- end -->
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+
+    
+<!--  cargo -->  
+   <!-- cargo black -->
+   <div
+   class="modal fade modal-fullscreen footer-to-bottom"
+   id="cargo_black"
+   tabindex="0"
+   role="dialog"
+   aria-labelledby="modal"
+   aria-hidden="true">
+     
+   <div class="modal-dialog animated fadeInDown">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button
+           type="button"
+           class="close"
+           data-dismiss="modal"
+           aria-hidden="true"
+         >
+         <i class="fa fa-times" aria-hidden="true"></i>
+         </button>
+         <img src="./asset/logo.png" class="img-fluid logo-container">
+       </div>
+       <div class="modal-body">
+       
+         <div class="row">
+             
+             
+               <div class="col-xs-12 col-md-6 col-sm-push-6">
+                
+                    <img src="./asset/image/cargo_black.jpg" 
+                    class="img-responsive"
+                    alt="image"
+                    
+                    >
+                
+               
+             </div>  
+           
+
+           <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+             <div style="margin: 1 rem ;">
+           <!-- Name product -->
+         <h2> Chino - Grey </h2>
+           </div>
+           <!-- harga -->
+           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <!-- paragraph 1 -->
+           <p style="text-align: justify;">Inari Black 13 Oz berbahan Black Ring Indigo dan gramasi ketebalan bahan 13 oz, bahan Inari Black 13 Cotton Unstretch (Tidak Melar) bahan yang relatif kaku menghasilkan fading yang baik namun tidak terlalu tebal sehingga cocok dan nyaman untuk dipakai aktivitas keseharian.
+           <!-- paragraph 2 -->
+            <p style="text-align: justify;"> Detail pabrik bahan denim ini Sanforized ya tidak perlu Initial Soak (Pencucian Pertama Kali) karena tidak adanya penyusutan bahan</p>
+           <!-- paragraph 3 -->
+            <p style="text-align: justify;">Fading yang dihasilkan bahan ini menghasilkan fading yang cukup unik, karena warna serat Ring Indigo dan Blacknya ditambah bahan detailnya yang cukup mengkilap pada awal namun seiring berjalannya pemakaian mendapatkan Fading yang Kontrast.
+            Detail pada jahitan yang tebal yaitu ukuran 20/5 Bigstitch Gold Stitch membuat denim semakin kuat, ditambahnya Chainstitch (Jahitan Rantai) membuat celana sangat layak di pakai tempur hingga Fading tanpa adanya jahitan yang lepas.
+             </p>
+             
+             <div class="container" style="padding-left: 0;" >
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+           
+           </div>
+           
+         </div>
+       </div>
+       </div>
+       </div>
+
+     </div>
+   </div>
+
+   <!-- cargo green -->
+   <div
+   class="modal fade modal-fullscreen footer-to-bottom"
+   id="cargo_green"
+   tabindex="0"
+   role="dialog"
+   aria-labelledby="modal"
+   aria-hidden="true">
+     
+   <div class="modal-dialog animated fadeInDown">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button
+           type="button"
+           class="close"
+           data-dismiss="modal"
+           aria-hidden="true"
+         >
+         <i class="fa fa-times" aria-hidden="true"></i>
+         </button>
+         <img src="./asset/logo.png" class="img-fluid logo-container">
+       </div>
+       <div class="modal-body">
+       
+         <div class="row">
+             
+             
+               <div class="col-xs-12 col-md-6 col-sm-push-6">
+                
+                    <img src="./asset/image/cargo_green.jpg" 
+                    class="img-responsive"
+                    alt="image"
+                    
+                    >
+                
+               
+             </div>  
+           
+
+           <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+             <div style="margin: 1 rem ;">
+           <!-- Name product -->
+         <h2> Chino - Grey </h2>
+           </div>
+           <!-- harga -->
+           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <!-- paragraph 1 -->
+           <p style="text-align: justify;">Inari Black 13 Oz berbahan Black Ring Indigo dan gramasi ketebalan bahan 13 oz, bahan Inari Black 13 Cotton Unstretch (Tidak Melar) bahan yang relatif kaku menghasilkan fading yang baik namun tidak terlalu tebal sehingga cocok dan nyaman untuk dipakai aktivitas keseharian.
+           <!-- paragraph 2 -->
+            <p style="text-align: justify;"> Detail pabrik bahan denim ini Sanforized ya tidak perlu Initial Soak (Pencucian Pertama Kali) karena tidak adanya penyusutan bahan</p>
+           <!-- paragraph 3 -->
+            <p style="text-align: justify;">Fading yang dihasilkan bahan ini menghasilkan fading yang cukup unik, karena warna serat Ring Indigo dan Blacknya ditambah bahan detailnya yang cukup mengkilap pada awal namun seiring berjalannya pemakaian mendapatkan Fading yang Kontrast.
+            Detail pada jahitan yang tebal yaitu ukuran 20/5 Bigstitch Gold Stitch membuat denim semakin kuat, ditambahnya Chainstitch (Jahitan Rantai) membuat celana sangat layak di pakai tempur hingga Fading tanpa adanya jahitan yang lepas.
+             </p>
+             
+             <div class="container" style="padding-left: 0;" >
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+           
+           </div>
+           
+         </div>
+       </div>
+       </div>
+       </div>
+
+     </div>
+   </div>
+   
+   <!-- cargo green manekin -->
+   <div
+   class="modal fade modal-fullscreen footer-to-bottom"
+   id="cargo_greenmanekin"
+   tabindex="0"
+   role="dialog"
+   aria-labelledby="modal"
+   aria-hidden="true">
+     
+   <div class="modal-dialog animated fadeInDown">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button
+           type="button"
+           class="close"
+           data-dismiss="modal"
+           aria-hidden="true"
+         >
+         <i class="fa fa-times" aria-hidden="true"></i>
+         </button>
+         <img src="./asset/logo.png" class="img-fluid logo-container">
+       </div>
+       <div class="modal-body">
+       
+         <div class="row">
+             
+             
+               <div class="col-xs-12 col-md-6 col-sm-push-6">
+                
+                    <img src="./asset/image/cargo_green.jpg" 
+                    class="img-responsive"
+                    alt="image"
+                    
+                    >
+                
+               
+             </div>  
+           
+
+           <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+             <div style="margin: 1 rem ;">
+           <!-- Name product -->
+         <h2> Chino - Grey </h2>
+           </div>
+           <!-- harga -->
+           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <!-- paragraph 1 -->
+           <p style="text-align: justify;">Inari Black 13 Oz berbahan Black Ring Indigo dan gramasi ketebalan bahan 13 oz, bahan Inari Black 13 Cotton Unstretch (Tidak Melar) bahan yang relatif kaku menghasilkan fading yang baik namun tidak terlalu tebal sehingga cocok dan nyaman untuk dipakai aktivitas keseharian.
+           <!-- paragraph 2 -->
+            <p style="text-align: justify;"> Detail pabrik bahan denim ini Sanforized ya tidak perlu Initial Soak (Pencucian Pertama Kali) karena tidak adanya penyusutan bahan</p>
+           <!-- paragraph 3 -->
+            <p style="text-align: justify;">Fading yang dihasilkan bahan ini menghasilkan fading yang cukup unik, karena warna serat Ring Indigo dan Blacknya ditambah bahan detailnya yang cukup mengkilap pada awal namun seiring berjalannya pemakaian mendapatkan Fading yang Kontrast.
+            Detail pada jahitan yang tebal yaitu ukuran 20/5 Bigstitch Gold Stitch membuat denim semakin kuat, ditambahnya Chainstitch (Jahitan Rantai) membuat celana sangat layak di pakai tempur hingga Fading tanpa adanya jahitan yang lepas.
+             </p>
+             
+             <div class="container" style="padding-left: 0;" >
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+           
+           </div>
+           
+         </div>
+       </div>
+       </div>
+       </div>
+
+     </div>
+   </div>
+
+    
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
