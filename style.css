@@ -218,6 +218,11 @@ body.AR-container {
 .modal-body {
   background: white;
 }
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 999999;
+}
 
 .modal.modal-fullscreen .modal-dialog,
 .modal.modal-fullscreen .modal-content {
@@ -227,6 +232,7 @@ body.AR-container {
   right: 0;
   top: 0;
   background: white;
+ 
 }
 .modal.modal-fullscreen .modal-dialog {
   margin: 0;
