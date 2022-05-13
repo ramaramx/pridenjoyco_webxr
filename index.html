@@ -137,7 +137,7 @@ crossorigin="anonymous"></script>
         
         <!-- Building -->
        
-            <audio id="bgmusic" src="./asset/holdon.mp3" crossorigin="anonymous"></audio>
+            <audio id="bgmusic" src="./asset/holdon.mp3" crossorigin="anonymous" allow="autoplay; fullscreen"></audio>
             <a-asset-item id="building-glb" src="./asset/basebuilding.glb"></a-asset-item>
             <a-asset-item id="navmesh-glb" src="./asset/navmesh.glb"></a-asset-item>
         
@@ -1199,7 +1199,8 @@ crossorigin="anonymous"></script>
                        data-toggle="modal"
                        data-target="#modal1" 
                       src="#logo" rotation="0 -90 0" position="-0.98526 1.4 -0.01474" scale="0.5 0.5 0.5"
-                      sound="src: #bgmusic; on: click; autoplay:true; loop:true" ></a-image>
+                      sound="src: #bgmusic; on: click; autoplay:true; loop:true; poolsize: 1;"
+                       ></a-image>
            
             </a-entity>
       
