@@ -26,6 +26,7 @@
     <script src="aframe-onload-move-camera.js"></script>
 
     <script src="simple-navmesh.js"></script>
+    <script src="aframe-href.js"></script>
     
     
 <!-- jquery -->
@@ -111,7 +112,7 @@ crossorigin="anonymous"></script>
             cursor="rayOrigin: mouse"
             simple-navmesh-constraint="navmesh:.navmesh;fall:0.5;height:1.6;"
             > </a-entity>
-            
+            <a-cursor></a-cursor>
       </a-entity>
     
       <a-gltf-model class="navmesh" src="#navmesh-glb" visible="false" position="0 0 0" ></a-gltf-model>
@@ -226,6 +227,12 @@ crossorigin="anonymous"></script>
         <a-asset-item id="weistbagnavy" src="./asset/lantai_atas/bags/weistbagnavy.glb"></a-asset-item>
 
         <!-- hats -->
+        <a-asset-item id="5panel" src="./asset/lantai_atas/hats/5_panel.glb"></a-asset-item>
+        <a-asset-item id="6panel" src="./asset/lantai_atas/hats/6_panel.glb"></a-asset-item>
+        <a-asset-item id="beanie_hat" src="./asset/lantai_atas/hats/beanie_hat.glb"></a-asset-item>
+        <a-asset-item id="bucked_hat" src="./asset/lantai_atas/hats/bucked_hat.glb"></a-asset-item>
+        <a-asset-item id="polo_hat" src="./asset/lantai_atas/hats/polo_hat.glb"></a-asset-item>
+        <a-asset-item id="trucker_hat" src="./asset/lantai_atas/hats/trucker_hat.glb"></a-asset-item>
         
         <!-- outer -->
         <a-asset-item id="coachjckt" src="./asset/lantai_atas/outer/coachjckt.glb"></a-asset-item>
@@ -294,8 +301,8 @@ crossorigin="anonymous"></script>
         <!-- model customer Service  -->   
               
           <a-gltf-model
-                     data-toggle="modal"
-                     data-target=""
+          href="https://pridenjoyco.id"
+          target="_blank"
                      src="#komputer"
                      rotation="" 
                position="0 1 0" 
@@ -303,8 +310,9 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
       
           <a-gltf-model
-                     data-toggle="modal"
-                     data-target=""
+          href="https://pridenjoyco.id/shop"
+          target="_blank"
+                     
                      src="#bank_payment"
                      rotation="" 
                position="0 1 0" 
@@ -312,8 +320,8 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
       
           <a-gltf-model
-                     data-toggle="modal"
-                     data-target=""
+          href="https://web3.pridenjoyco.id"
+          target="_blank"
                      src="#crypto_payment"
                      rotation="" 
                position="0 1 0" 
@@ -321,8 +329,8 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
       
           <a-gltf-model
-                     data-toggle="modal"
-                     data-target=""
+          href="https://pridenjoyco.id/fast_pants"
+          target="_blank"
                      src="#fast_pants"
                      rotation="" 
                position="0 1 0" 
@@ -333,8 +341,8 @@ crossorigin="anonymous"></script>
                    
           <!-- Model Social Media  -->
           <a-gltf-model
-                     data-toggle="modal"
-                     data-target=""
+          href="https://www.facebook.com/pridenjoyco/"
+          target="_blank"
                      src="#facebook"
                      rotation="" 
                position="0 1 0" 
@@ -342,8 +350,8 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
           
           <a-gltf-model
-                     data-toggle="modal"
-                     data-target=""
+          href="https://www.instagram.com/pridenjoyco/"
+          target="_blank"
                      src="#instagram"
                      rotation="" 
                position="0 1 0" 
@@ -351,8 +359,8 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
 
           <a-gltf-model
-                     data-toggle="modal"
-                     data-target=""
+          href="https://www.lazada.co.id/shop/pridenjoyco/"
+          target="_blank"
                      src="#lazada"
                      rotation="" 
                position="0 1 0" 
@@ -360,8 +368,8 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
 
           <a-gltf-model
-                     data-toggle="modal"
-                     data-target=""
+          href="https://shopee.co.id/pridenjoyco"
+          target="_blank"
                      src="#shopee"
                      rotation="" 
                position="0 1 0" 
@@ -369,8 +377,8 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
 
           <a-gltf-model
-                     data-toggle="modal"
-                     data-target=""
+          href="https://www.tiktok.com/@pridenjoyco"
+          target="_blank"
                      src="#tiktok"
                      rotation="" 
                position="0 1 0" 
@@ -378,8 +386,7 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
           
           <a-gltf-model
-                     data-toggle="modal"
-                     data-target=""
+          
                      src="#twitter"
                      rotation="" 
                position="0 1 0" 
@@ -387,8 +394,8 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
 
           <a-gltf-model
-           data-toggle="modal"
-           data-target=""
+          href="https://www.pridenjoyco.id/"
+          target="_blank"
            src="#web"
            rotation="" 
           position="0 1 0" 
@@ -396,8 +403,8 @@ crossorigin="anonymous"></script>
          </a-gltf-model>
 
           <a-gltf-model
-          data-toggle="modal"
-          data-target=""
+          href="https://www.youtube.com/c/PRIDENJOYCO"
+          target="_blank"
           src="#youtube"
           rotation="" 
           position="0 1 0" 
@@ -749,7 +756,7 @@ crossorigin="anonymous"></script>
             <!--model bags  -->
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#backpack_army"
                     src="#backpackarmy"
                     rotation="" 
               position="0 1 0" 
@@ -758,7 +765,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#backpack_black"
                     src="#backpackblck"
                     rotation="" 
               position="0 1 0" 
@@ -767,7 +774,7 @@ crossorigin="anonymous"></script>
           
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#backpack_navy"
                     src="#backpacknavy"
                     rotation="" 
               position="0 1 0" 
@@ -776,7 +783,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#meshmini_army"
                     src="#meshminiarmy"
                     rotation="" 
               position="0 1 0" 
@@ -785,7 +792,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#meshmini_black"
                     src="#meshminiblck"
                     rotation="" 
               position="0 1 0" 
@@ -794,7 +801,7 @@ crossorigin="anonymous"></script>
           
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#meshmini_navy"
                     src="#meshmininavy"
                     rotation="" 
               position="0 1 0" 
@@ -803,7 +810,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#mini_black"
                     src="#minibagblck"
                     rotation="" 
               position="0 1 0" 
@@ -812,7 +819,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#minibag_army"
                     src="#minibagarmy"
                     rotation="" 
               position="0 1 0" 
@@ -821,7 +828,7 @@ crossorigin="anonymous"></script>
           
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#minibag_navy"
                     src="#minibagnavy"
                     rotation="" 
               position="0 1 0" 
@@ -830,7 +837,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#weistbag_army"
                     src="#weistbagarmy"
                     rotation="" 
               position="0 1 0" 
@@ -839,7 +846,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#weistbag_black"
                     src="#weistbagblck"
                     rotation="" 
               position="0 1 0" 
@@ -848,7 +855,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#weistbag_navy"
                     src="#weistbagnavy"
                     rotation="" 
               position="0 1 0" 
@@ -856,11 +863,63 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
           
           <!-- model hats-->
+          <a-gltf-model
+          data-toggle="modal"
+          data-target="#5_panel"
+          src="#5panel"
+            rotation="" 
+          position="0 1 0" 
+          scale="">
+          </a-gltf-model>
 
+          <a-gltf-model
+          data-toggle="modal"
+          data-target="#6_panel"
+          src="#6panel"
+            rotation="" 
+          position="0 1 0" 
+          scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+          data-toggle="modal"
+          data-target="#beaniehat"
+          src="#beanie_hat"
+            rotation="" 
+          position="0 1 0" 
+          scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+          data-toggle="modal"
+          data-target="#buckedhat"
+          src="#bucked_hat"
+            rotation="" 
+          position="0 1 0" 
+          scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+          data-toggle="modal"
+          data-target="#polohat"
+          src="#polo_hat"
+            rotation="" 
+          position="0 1 0" 
+          scale="">
+          </a-gltf-model>
+
+          <a-gltf-model
+          data-toggle="modal"
+          data-target="#truckerhat"
+          src="#trucker_hat"
+            rotation="" 
+          position="0 1 0" 
+          scale="">
+          </a-gltf-model>
           <!-- model outer -->
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#coach_jacket"
                     src="#coachjckt"
                     rotation="" 
               position="0 1 0" 
@@ -869,7 +928,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#crwneck_black"
                     src="#crwnckblck"
                     rotation="" 
               position="0 1 0" 
@@ -878,7 +937,7 @@ crossorigin="anonymous"></script>
           
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#crwneck_blue"
                     src="#crwnckblue"
                     rotation="" 
               position="0 1 0" 
@@ -887,7 +946,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#crwneck_khaki"
                     src="#crwnckkhaki"
                     rotation="" 
               position="0 1 0" 
@@ -896,7 +955,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#crwneck_red"
                     src="#crwnckred"
                     rotation="" 
               position="0 1 0" 
@@ -905,7 +964,7 @@ crossorigin="anonymous"></script>
           
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#crwneck_wth"
                     src="#crwnckwth"
                     rotation="" 
               position="0 1 0" 
@@ -914,7 +973,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#hoody_army"
                     src="#hoodyarmy"
                     rotation="" 
               position="0 1 0" 
@@ -923,7 +982,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#hoody_black"
                     src="#hoodyblck"
                     rotation="" 
               position="0 1 0" 
@@ -932,7 +991,7 @@ crossorigin="anonymous"></script>
           
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#hoody_grey"
                     src="#hoodygrey"
                     rotation="" 
               position="0 1 0" 
@@ -941,7 +1000,7 @@ crossorigin="anonymous"></script>
           
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#kimono_navy"
                     src="#kimononavy"
                     rotation="" 
               position="0 1 0" 
@@ -950,7 +1009,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#kimono_wabash"
                     src="#kimonowabash"
                     rotation="" 
               position="0 1 0" 
@@ -959,7 +1018,7 @@ crossorigin="anonymous"></script>
           
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#plybomber_jckt"
                     src="#plydbomberjckt"
                     rotation="" 
               position="0 1 0" 
@@ -968,7 +1027,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#trucker_brown"
                     src="#truckerbrown"
                     rotation="" 
               position="0 1 0" 
@@ -977,7 +1036,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#trucker_navy"
                     src="#truckernavy"
                     rotation="" 
               position="0 1 0" 
@@ -986,7 +1045,7 @@ crossorigin="anonymous"></script>
           
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#trucker_wabash"
                     src="#truckerwabash"
                     rotation="" 
               position="0 1 0" 
@@ -995,7 +1054,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#vest1"
                     src="#vest"
                     rotation="" 
               position="0 1 0" 
@@ -1004,7 +1063,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#worker_jckt"
                     src="#workerjckt"
                     rotation="" 
               position="0 1 0" 
@@ -1014,7 +1073,7 @@ crossorigin="anonymous"></script>
           <!-- model shoes -->
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#grusiah_hi"
                     src="#grusianhi"
                     rotation="" 
               position="0 1 0" 
@@ -1023,7 +1082,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#grusian_low"
                     src="#grusianlow"
                     rotation="" 
               position="0 1 0" 
@@ -1032,7 +1091,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#margatoe_hi"
                     src="#margatoehi"
                     rotation="" 
               position="0 1 0" 
@@ -1041,7 +1100,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#margatoe_low"
                     src="#margatoelow"
                     rotation="" 
               position="0 1 0" 
@@ -1050,7 +1109,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#sandal_army"
                     src="#sandalarmy"
                     rotation="" 
               position="0 1 0" 
@@ -1059,7 +1118,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#sandal_black"
                     src="#sandalblck"
                     rotation="" 
               position="0 1 0" 
@@ -1068,7 +1127,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#sandal_brown"
                     src="#sandalbrown"
                     rotation="" 
               position="0 1 0" 
@@ -1077,7 +1136,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#sandal_grey"
                     src="#sandalgrey"
                     rotation="" 
               position="0 1 0" 
@@ -1086,7 +1145,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#synom_hi"
                     src="#synomhi"
                     rotation="" 
               position="0 1 0" 
@@ -1097,7 +1156,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#polo_grey"
                     src="#pologrey"
                     rotation="" 
               position="0 1 0" 
@@ -1106,7 +1165,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#polo_navy"
                     src="#polonavy"
                     rotation="" 
               position="0 1 0" 
@@ -1115,7 +1174,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#polo_red"
                     src="#polored"
                     rotation="" 
               position="0 1 0" 
@@ -1124,7 +1183,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#tshirt_blck"
                     src="#tshirtblck"
                     rotation="" 
               position="0 1 0" 
@@ -1133,7 +1192,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#tshirt_blckgambar"
                     src="#tshirtblckgambar"
                     rotation="" 
               position="0 1 0" 
@@ -1142,7 +1201,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#tshirt_blue"
                     src="#tshirtblue"
                     rotation="" 
               position="0 1 0" 
@@ -1151,7 +1210,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#tshirt_grey"
                     src="#tshirtgrey"
                     rotation="" 
               position="0 1 0" 
@@ -1160,7 +1219,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#tshirt_red"
                     src="#tshirtred"
                     rotation="" 
               position="0 1 0" 
@@ -1169,7 +1228,7 @@ crossorigin="anonymous"></script>
           
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#tshirt_wth"
                     src="#tshirtwth"
                     rotation="" 
               position="0 1 0" 
@@ -1178,7 +1237,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#tshirt_wthgambar"
                     src="#tshirtwthgambar"
                     rotation="" 
               position="0 1 0" 
@@ -1187,7 +1246,7 @@ crossorigin="anonymous"></script>
 
           <a-gltf-model
                     data-toggle="modal"
-                    data-target=""
+                    data-target="#tshirt_yellow"
                     src="#tshirtyellow"
                     rotation="" 
               position="0 1 0" 
@@ -1259,7 +1318,7 @@ crossorigin="anonymous"></script>
          <h2> Cargo Black </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 16 USDT </h3>
            <!-- paragraph 1 -->
            <p style="text-align: justify;">Inari Black 13 Oz berbahan Black Ring Indigo dan gramasi ketebalan bahan 13 oz, bahan Inari Black 13 Cotton Unstretch (Tidak Melar) bahan yang relatif kaku menghasilkan fading yang baik namun tidak terlalu tebal sehingga cocok dan nyaman untuk dipakai aktivitas keseharian.
            <!-- paragraph 2 -->
@@ -1324,7 +1383,7 @@ crossorigin="anonymous"></script>
          <h2> Cargo Green </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 16 USDT</h3>
            <!-- paragraph 1 -->
            <p style="text-align: justify;"> Menggunakan bahan Cotton Twill 11 Oz yang tidak stretch membuat celana lebih awet untuk pemakaian dan tidak mudah robek.</p>
            <!-- paragraph 2 -->
@@ -1387,7 +1446,7 @@ crossorigin="anonymous"></script>
          <h2> Cargo Green </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 16 USDT</h3>
            <p style="text-align: justify;"> Menggunakan bahan Cotton Twill 11 Oz yang tidak stretch membuat celana lebih awet untuk pemakaian dan tidak mudah robek.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Memiliki 6 Saku untuk Cargo Green Two Tone mempermudah dalam kegiatan Outdoor salah satunya membawa barang yang banyak.</p>
@@ -1435,7 +1494,7 @@ crossorigin="anonymous"></script>
              
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/cargo_greentwotone.jpg" 
                     class="img-responsive"
                     alt="image"
                     
@@ -1451,7 +1510,7 @@ crossorigin="anonymous"></script>
          <h2> Cargo Green Two Tone </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 16 USDT </h3>
            <p style="text-align: justify;"> Cargo Green Two Tone. berbeda dengan Cargo basic kita sebelumnya untuk cargo two tone memiliki 2 warna yaitu green pada warna dasarnya dan khaki untuk detail saku. Rekomendasi bagi bro nya yang ingin mencoba dengan warna unik.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Memiliki 6 Saku untuk Cargo Green Two Tone mempermudah dalam kegiatan Outdoor salah satunya membawa barang yang banyak
@@ -1495,7 +1554,7 @@ crossorigin="anonymous"></script>
              
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/cargo_khaki.jpg" 
                     class="img-responsive"
                     alt="image"
                     
@@ -1511,7 +1570,7 @@ crossorigin="anonymous"></script>
          <h2> Cargo Khaki </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 16 USDT</h3>
            <p style="text-align: justify;"> Menggunakan bahan Cotton Twill yang tidak stretch membuat celana lebih awet untuk pemakaian dan tidak mudah robek.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Memiliki Fitur Long Short Pants yaitu bisa dibuat panjang dan pendek, terdapat sleting pada bagian lutut untuk membuat celana menjadi panjang dan pendek
@@ -1557,7 +1616,7 @@ crossorigin="anonymous"></script>
              
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/cargo_khaki.jpg" 
                     class="img-responsive"
                     alt="image"
                     
@@ -1573,7 +1632,7 @@ crossorigin="anonymous"></script>
          <h2> Cargo Khaki </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 16 USDT </h3>
            <p style="text-align: justify;"> Menggunakan bahan Cotton Twill yang tidak stretch membuat celana lebih awet untuk pemakaian dan tidak mudah robek.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Memiliki Fitur Long Short Pants yaitu bisa dibuat panjang dan pendek, terdapat sleting pada bagian lutut untuk membuat celana menjadi panjang dan pendek
@@ -1619,7 +1678,7 @@ crossorigin="anonymous"></script>
              
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/cargo_khakitwotone.jpg" 
                     class="img-responsive"
                     alt="image"
                     
@@ -1635,7 +1694,7 @@ crossorigin="anonymous"></script>
          <h2> Cargo Khaki Two Tone </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 16 USDT </h3>
            <p style="text-align: justify;"> Variasi unik dengan kombinasi 2 warna, warna dasar khaki dan pada pocket warna green olive terinspirasi dari menggabungkan kombinasi warna varian cargo produk kita "Cargo Khaki dan Cargo Green"</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Selain cocok untuk outfit daily, outfit Cargo Two Tone ini sangat rekomendasi untuk kegiatan outdoor karena dengan banyaknya 6 saku bisa membawa barang kalian lebih banyak tanpa harus membawa Tas
@@ -1680,7 +1739,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_black.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -1692,7 +1751,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Black </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Black (Hitam Pekat) dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini dikarenakan sangat cocok untuk tampil dengan setelan Casual direkomendasikan dengan atasan yang berwarna cerah.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Dengan cuttingan Reguler membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki, dibuat dengan ketebalan bahan 11 OZ yang relatif tebal untuk Chino Series.</p>
@@ -1732,7 +1791,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_black.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -1744,7 +1803,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Black </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Black (Hitam Pekat) dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini dikarenakan sangat cocok untuk tampil dengan setelan Casual direkomendasikan dengan atasan yang berwarna cerah.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Dengan cuttingan Reguler membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki, dibuat dengan ketebalan bahan 11 OZ yang relatif tebal untuk Chino Series.</p>
@@ -1786,7 +1845,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_black.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -1798,7 +1857,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Black</h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Black (Hitam Pekat) dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini dikarenakan sangat cocok untuk tampil dengan setelan Casual direkomendasikan dengan atasan yang berwarna cerah.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Dengan cuttingan Reguler membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki, dibuat dengan ketebalan bahan 11 OZ yang relatif tebal untuk Chino Series.</p>
@@ -1840,7 +1899,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_cream.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -1852,7 +1911,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Cream </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Khaki dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini dengan warna Cream atau biasa disebut warna cokelat muda sangat cocok dipadukan dengan setelan formal ataupun Casual.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Dengan cuttingan Reguler membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki. Dibuat dengan ketebalan bahan 11 OZ yang relatif tebal untuk Chino Series.</p>
@@ -1893,7 +1952,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_cream.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -1905,7 +1964,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Cream </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Khaki dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini dengan warna Cream atau biasa disebut warna cokelat muda sangat cocok dipadukan dengan setelan formal ataupun Casual.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Dengan cuttingan Reguler membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki. Dibuat dengan ketebalan bahan 11 OZ yang relatif tebal untuk Chino Series.</p>
@@ -1947,7 +2006,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_green.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -1959,7 +2018,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Green </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Green dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini dikarenakan warna Green Olive yang sangat cocok dipakai untuk kegiatan Outdoor.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Dengan cuttingan Reguler Fit membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki.</p>
@@ -2002,7 +2061,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_green.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -2014,7 +2073,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Green </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Green dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini dikarenakan warna Green Olive yang sangat cocok dipakai untuk kegiatan Outdoor.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Dengan cuttingan Reguler Fit membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki.</p>
@@ -2057,7 +2116,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_green.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -2069,7 +2128,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Green </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT</h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Green dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini dikarenakan warna Green Olive yang sangat cocok dipakai untuk kegiatan Outdoor.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Dengan cuttingan Reguler Fit membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki.</p>
@@ -2113,7 +2172,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_khaki.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -2125,7 +2184,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Khaki </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Khaki dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> dengan cuttingan Reguler membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki. Dibuat dengan ketebalan bahan 11 OZ yang relatif tebal untuk Chino Series..</p>
@@ -2168,7 +2227,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_khaki.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -2180,7 +2239,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Khaki </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Khaki dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> dengan cuttingan Reguler membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki. Dibuat dengan ketebalan bahan 11 OZ yang relatif tebal untuk Chino Series..</p>
@@ -2224,7 +2283,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_khaki.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -2236,7 +2295,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Khaki </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Khaki dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> dengan cuttingan Reguler membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki. Dibuat dengan ketebalan bahan 11 OZ yang relatif tebal untuk Chino Series..</p>
@@ -2280,7 +2339,7 @@ crossorigin="anonymous"></script>
          <div class="row">
                <div class="col-xs-12 col-md-6 col-sm-push-6">
                 
-                    <img src="./asset/image/cargo_green.jpg" 
+                    <img src="./asset/image/chino_navy.jpg" 
                     class="img-responsive"
                     alt="image">
              </div>  
@@ -2292,7 +2351,7 @@ crossorigin="anonymous"></script>
          <h2> Chino Navy </h2>
            </div>
            <!-- harga -->
-           <h3 style="font-weight:700;"> Rp.150,000 </h3>
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
            <p style="text-align: justify;"> Dibuat dengan bahan warna Navy (Biru Tua) dan detail bahan Twill Garment dapat menjadi pilihaanmu untuk mengambil produk ini dikarenakan sangat cocok untuk tampil dengan setelan Casual.</p>
            <!-- paragraph 2 -->
             <p style="text-align: justify;"> Dengan cuttingan Reguler membuat aktivitas keseharianmu nyaman dikarenakan tidak ngefit pada kaki, dibuat dengan ketebalan bahan 11 OZ yang relatif tebal untuk Chino Series.</p>
@@ -2310,9 +2369,1473 @@ crossorigin="anonymous"></script>
 </div>
 </div>
 </div>
-<!-- navbar player -->
+
+<!-- crow -->
+<div
+   class="modal fade modal-fullscreen footer-to-bottom"
+   id="crow_1"
+   tabindex="0"
+   role="dialog"
+   aria-labelledby="modal"
+   aria-hidden="true">
+     
+   <div class="modal-dialog animated fadeInDown">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button
+           type="button"
+           class="close"
+           data-dismiss="modal"
+           aria-hidden="true"
+         >
+         <i class="fa fa-times" aria-hidden="true"></i>
+         </button>
+         <img src="./asset/logo.png" class="img-fluid logo-container">
+       </div>
+       <div class="modal-body">
+       
+         <div class="row">
+               <div class="col-xs-12 col-md-6 col-sm-push-6">
+                
+                    <img src="./asset/image/crow.jpg" 
+                    class="img-responsive"
+                    alt="image">
+             </div>  
+           
+
+           <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+             <div style="margin: 1 rem ;">
+           <!-- Name product -->
+         <h2>Crow </h2>
+           </div>
+           <!-- harga -->
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
+           <p style="text-align: justify;"> Berbahan relatif tebal dengan gramasi ketebalan 13.5 Oz (relatif tebal), Cuttingan Slim Straight sedikit melebar pada bagian lutut kebawah, Sangat cocok dipakai untuk jenis badan yang relatif besar atau kecil.</p>
+           <!-- paragraph 2 -->
+            <p style="text-align: justify;"> Walaupun Unstretch(Tidak Melar) tapi nyaman untuk dipakai kegiatan keseharianmu
+</p>
+           <!-- paragraph 3 -->
+            <p style="text-align: justify;"> Untuk menghasilkan fading yang baik membutuhkan waktu 6-8 bulan tergantung dari pemakaian dan warna yang dihasilkan cukup Kontras karena detail bahan berwarna Deep Grey Black Indigo.
+</p>
 
 
+         
+       </div>
+       </div>
+       </div>
+     </div>
+   </div>
+  </div>
+
+  <!-- crow 2 -->
+
+  <div
+   class="modal fade modal-fullscreen footer-to-bottom"
+   id="crow_2"
+   tabindex="0"
+   role="dialog"
+   aria-labelledby="modal"
+   aria-hidden="true">
+     
+   <div class="modal-dialog animated fadeInDown">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button
+           type="button"
+           class="close"
+           data-dismiss="modal"
+           aria-hidden="true"
+         >
+         <i class="fa fa-times" aria-hidden="true"></i>
+         </button>
+         <img src="./asset/logo.png" class="img-fluid logo-container">
+       </div>
+       <div class="modal-body">
+       
+         <div class="row">
+               <div class="col-xs-12 col-md-6 col-sm-push-6">
+                
+                    <img src="./asset/image/crow.jpg" 
+                    class="img-responsive"
+                    alt="image">
+             </div>  
+           
+
+           <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+             <div style="margin: 1 rem ;">
+           <!-- Name product -->
+         <h2>Crow </h2>
+           </div>
+           <!-- harga -->
+           <h3 style="font-weight:700;"> 14.6 USDT </h3>
+           <p style="text-align: justify;"> Berbahan relatif tebal dengan gramasi ketebalan 13.5 Oz (relatif tebal), Cuttingan Slim Straight sedikit melebar pada bagian lutut kebawah, Sangat cocok dipakai untuk jenis badan yang relatif besar atau kecil.</p>
+           <!-- paragraph 2 -->
+            <p style="text-align: justify;"> Walaupun Unstretch(Tidak Melar) tapi nyaman untuk dipakai kegiatan keseharianmu
+</p>
+           <!-- paragraph 3 -->
+            <p style="text-align: justify;"> Untuk menghasilkan fading yang baik membutuhkan waktu 6-8 bulan tergantung dari pemakaian dan warna yang dihasilkan cukup Kontras karena detail bahan berwarna Deep Grey Black Indigo.
+</p>
+
+
+         
+       </div>
+       </div>
+       </div>
+     </div>
+   </div>
+  </div>
+
+  <!-- crow 3 -->
+  <div
+  class="modal fade modal-fullscreen footer-to-bottom"
+  id="crow_3"
+  tabindex="0"
+  role="dialog"
+  aria-labelledby="modal"
+  aria-hidden="true">
+    
+  <div class="modal-dialog animated fadeInDown">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true"
+        >
+        <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <img src="./asset/logo.png" class="img-fluid logo-container">
+      </div>
+      <div class="modal-body">
+      
+        <div class="row">
+              <div class="col-xs-12 col-md-6 col-sm-push-6">
+               
+                   <img src="./asset/image/crow.jpg" 
+                   class="img-responsive"
+                   alt="image">
+            </div>  
+          
+
+          <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+            <div style="margin: 1 rem ;">
+          <!-- Name product -->
+        <h2> Crow</h2>
+          </div>
+          <!-- harga -->
+          <h3 style="font-weight:700;"> 14.6 USDT </h3>
+          <p style="text-align: justify;"> Berbahan relatif tebal dengan gramasi ketebalan 13.5 Oz (relatif tebal), Cuttingan Slim Straight sedikit melebar pada bagian lutut kebawah, Sangat cocok dipakai untuk jenis badan yang relatif besar atau kecil.</p>
+          <!-- paragraph 2 -->
+           <p style="text-align: justify;"> Walaupun Unstretch(Tidak Melar) tapi nyaman untuk dipakai kegiatan keseharianmu
+</p>
+          <!-- paragraph 3 -->
+           <p style="text-align: justify;"> Untuk menghasilkan fading yang baik membutuhkan waktu 6-8 bulan tergantung dari pemakaian dan warna yang dihasilkan cukup Kontras karena detail bahan berwarna Deep Grey Black Indigo.
+</p>
+
+
+        
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <!-- inariblack -->
+ <div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="inariblack_1"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/inari_black.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Inari Black </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;">Inari Black 13 Oz Inari Black 13 Oz berbahan Black Ring Indigo dan gramasi ketebalan bahan 13 oz, bahan Inari Black 13 Cotton Unstretch (Tidak Melar) bahan yang relatif kaku menghasilkan fading yang baik namun tidak terlalu tebal sehingga cocok dan nyaman untuk dipakai aktivitas keseharian.</p>
+         <!-- paragraph 2 -->
+          <p style="text-align: justify;"> Detail pabrik bahan denim ini Sanforized ya tidak perlu Initial Soak (Pencucian Pertama Kali) karena tidak adanya penyusutan bahan</p>
+         <!-- paragraph 3 -->
+          <p style="text-align: justify;"> Fading yang dihasilkan bahan ini menghasilkan fading yang cukup unik, karena warna serat Ring Indigo dan Blacknya ditambah bahan detailnya yang cukup mengkilap pada awal namun seiring berjalannya pemakaian mendapatkan Fading yang Kontrast.
+           </p>
+     
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- inariblack2 -->
+
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="inariblack_2"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/inari_black.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2> Inari Black</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;">Inari Black 13 Oz Inari Black 13 Oz berbahan Black Ring Indigo dan gramasi ketebalan bahan 13 oz, bahan Inari Black 13 Cotton Unstretch (Tidak Melar) bahan yang relatif kaku menghasilkan fading yang baik namun tidak terlalu tebal sehingga cocok dan nyaman untuk dipakai aktivitas keseharian.</p>
+         <!-- paragraph 2 -->
+          <p style="text-align: justify;"> Detail pabrik bahan denim ini Sanforized ya tidak perlu Initial Soak (Pencucian Pertama Kali) karena tidak adanya penyusutan bahan</p>
+         <!-- paragraph 3 -->
+          <p style="text-align: justify;"> Fading yang dihasilkan bahan ini menghasilkan fading yang cukup unik, karena warna serat Ring Indigo dan Blacknya ditambah bahan detailnya yang cukup mengkilap pada awal namun seiring berjalannya pemakaian mendapatkan Fading yang Kontrast.
+           </p>
+     
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- inariblack3 -->
+
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="inariblack_3"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/inari_black.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2> Inari Black</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;">Inari Black 13 Oz Inari Black 13 Oz berbahan Black Ring Indigo dan gramasi ketebalan bahan 13 oz, bahan Inari Black 13 Cotton Unstretch (Tidak Melar) bahan yang relatif kaku menghasilkan fading yang baik namun tidak terlalu tebal sehingga cocok dan nyaman untuk dipakai aktivitas keseharian.</p>
+         <!-- paragraph 2 -->
+          <p style="text-align: justify;"> Detail pabrik bahan denim ini Sanforized ya tidak perlu Initial Soak (Pencucian Pertama Kali) karena tidak adanya penyusutan bahan</p>
+         <!-- paragraph 3 -->
+          <p style="text-align: justify;"> Fading yang dihasilkan bahan ini menghasilkan fading yang cukup unik, karena warna serat Ring Indigo dan Blacknya ditambah bahan detailnya yang cukup mengkilap pada awal namun seiring berjalannya pemakaian mendapatkan Fading yang Kontrast.
+           </p>
+     
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- inariblackmanekin -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="inariblack-manekin"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/inari_black.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2> Inari Black</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;">Inari Black 13 Oz Inari Black 13 Oz berbahan Black Ring Indigo dan gramasi ketebalan bahan 13 oz, bahan Inari Black 13 Cotton Unstretch (Tidak Melar) bahan yang relatif kaku menghasilkan fading yang baik namun tidak terlalu tebal sehingga cocok dan nyaman untuk dipakai aktivitas keseharian.</p>
+         <!-- paragraph 2 -->
+          <p style="text-align: justify;"> Detail pabrik bahan denim ini Sanforized ya tidak perlu Initial Soak (Pencucian Pertama Kali) karena tidak adanya penyusutan bahan</p>
+         <!-- paragraph 3 -->
+          <p style="text-align: justify;"> Fading yang dihasilkan bahan ini menghasilkan fading yang cukup unik, karena warna serat Ring Indigo dan Blacknya ditambah bahan detailnya yang cukup mengkilap pada awal namun seiring berjalannya pemakaian mendapatkan Fading yang Kontrast.
+           </p>
+     
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- jacko -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="jacko_1"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/jack_o.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Jack O </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;"> Salah satu rekomendasi Denim Best Seller dari prorduk kita Jack'O 13 Oz dengan warna bahan Deep Grey Black Blue Indigo menghasilkan warna detail Kehitaman ditambah warna biru menghasilkan warna fading yang tidak begitu kontras namun relatif lebih cepat dibandingkan dengan produk lain yang dominannya berwarna Indigo, ditambah gramasi bahan 13 Oz dengan tingkat stretch 2% membuat denim ini nyaman dipakai untuk daily.</p>
+         <!-- paragraph 2 -->
+          <p style="text-align: justify;"> Jenis denim ini Sanforized sehingga tidak perlu Insoak untuk pertama kali, bisa langsung dipakai, Jack O 13 OZ sudah menggunakan Zip Button (Kancing) Ciri Khas dari Denim Vintage yang tidak menggunakan Relsleting. Jahitan rantai (Chainstitch) membuat Denim yang dipakai menjadi lebih kuat untuk penggunaan Jangka Panjang dan Tenun pinggir memakai Pola Jahitan Shellstitch tidak membuat denim anda mudah robek untuk Jahitan Obras pinggira Denim</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- jacko2 -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="jacko_2"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/jack_o.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2> Jack O</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;"> Salah satu rekomendasi Denim Best Seller dari prorduk kita Jack'O 13 Oz dengan warna bahan Deep Grey Black Blue Indigo menghasilkan warna detail Kehitaman ditambah warna biru menghasilkan warna fading yang tidak begitu kontras namun relatif lebih cepat dibandingkan dengan produk lain yang dominannya berwarna Indigo, ditambah gramasi bahan 13 Oz dengan tingkat stretch 2% membuat denim ini nyaman dipakai untuk daily.</p>
+         <!-- paragraph 2 -->
+          <p style="text-align: justify;"> Jenis denim ini Sanforized sehingga tidak perlu Insoak untuk pertama kali, bisa langsung dipakai, Jack O 13 OZ sudah menggunakan Zip Button (Kancing) Ciri Khas dari Denim Vintage yang tidak menggunakan Relsleting. Jahitan rantai (Chainstitch) membuat Denim yang dipakai menjadi lebih kuat untuk penggunaan Jangka Panjang dan Tenun pinggir memakai Pola Jahitan Shellstitch tidak membuat denim anda mudah robek untuk Jahitan Obras pinggira Denim</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- jacko3 -->
+
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="jacko_3"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/jack_o.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Jack O </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;"> Salah satu rekomendasi Denim Best Seller dari prorduk kita Jack'O 13 Oz dengan warna bahan Deep Grey Black Blue Indigo menghasilkan warna detail Kehitaman ditambah warna biru menghasilkan warna fading yang tidak begitu kontras namun relatif lebih cepat dibandingkan dengan produk lain yang dominannya berwarna Indigo, ditambah gramasi bahan 13 Oz dengan tingkat stretch 2% membuat denim ini nyaman dipakai untuk daily.</p>
+         <!-- paragraph 2 -->
+          <p style="text-align: justify;"> Jenis denim ini Sanforized sehingga tidak perlu Insoak untuk pertama kali, bisa langsung dipakai, Jack O 13 OZ sudah menggunakan Zip Button (Kancing) Ciri Khas dari Denim Vintage yang tidak menggunakan Relsleting. Jahitan rantai (Chainstitch) membuat Denim yang dipakai menjadi lebih kuat untuk penggunaan Jangka Panjang dan Tenun pinggir memakai Pola Jahitan Shellstitch tidak membuat denim anda mudah robek untuk Jahitan Obras pinggira Denim</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- jackomanekin -->
+
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="jacko-manekin"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/jack_o.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Jack O </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;"> Salah satu rekomendasi Denim Best Seller dari prorduk kita Jack'O 13 Oz dengan warna bahan Deep Grey Black Blue Indigo menghasilkan warna detail Kehitaman ditambah warna biru menghasilkan warna fading yang tidak begitu kontras namun relatif lebih cepat dibandingkan dengan produk lain yang dominannya berwarna Indigo, ditambah gramasi bahan 13 Oz dengan tingkat stretch 2% membuat denim ini nyaman dipakai untuk daily.</p>
+         <!-- paragraph 2 -->
+          <p style="text-align: justify;"> Jenis denim ini Sanforized sehingga tidak perlu Insoak untuk pertama kali, bisa langsung dipakai, Jack O 13 OZ sudah menggunakan Zip Button (Kancing) Ciri Khas dari Denim Vintage yang tidak menggunakan Relsleting. Jahitan rantai (Chainstitch) membuat Denim yang dipakai menjadi lebih kuat untuk penggunaan Jangka Panjang dan Tenun pinggir memakai Pola Jahitan Shellstitch tidak membuat denim anda mudah robek untuk Jahitan Obras pinggira Denim</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- koji -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="koji_1"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <!-- <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/ko.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>   -->
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Koji</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+        <p> ing-slub midweight selvedge denim ini memiliki ketebalan 13 oz dengan warna blue indigo dan red line selvedge. Dibuat dengan cuttingan slim straight untuk memberikan kenyamanan untuk dipakai sehari-hari. Jenis jahitan yang dipakai adalah full chain stitch dengan warna benang gold.</p>
+
+        <p>Artikel ini juga dilengkapi dengan key loop, hidden pocket, dan hidden arcuate di saku belakang kanan. Kancing yang digunakan berupa button fly dengan desain signature PNJ. Embossed suede leather patch juga hadir untuk melengkapi identitas artikel ini. Hemming pada artikel ini dibuat oleh Union Special 43200g.</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- koji2 -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="koji_2"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <!-- <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/cargo_green.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>   -->
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Koji</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+        <p> ing-slub midweight selvedge denim ini memiliki ketebalan 13 oz dengan warna blue indigo dan red line selvedge. Dibuat dengan cuttingan slim straight untuk memberikan kenyamanan untuk dipakai sehari-hari. Jenis jahitan yang dipakai adalah full chain stitch dengan warna benang gold.</p>
+
+        <p>Artikel ini juga dilengkapi dengan key loop, hidden pocket, dan hidden arcuate di saku belakang kanan. Kancing yang digunakan berupa button fly dengan desain signature PNJ. Embossed suede leather patch juga hadir untuk melengkapi identitas artikel ini. Hemming pada artikel ini dibuat oleh Union Special 43200g.</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- zeldri1 -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="zeldris_1"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/zeldris.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Zeldris </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;">Zeldris  13 Oz Denim Full Black Garment berbahan Stretch membuat aktifitas keseharian lebih nyaman, denim ini sangat ringan digunakan. untuk cuttingan Zeldris 13 Oz Slim Tapered dari lutut kebawah mengkrucut.</p>
+           <!-- paragraph 2 -->
+            <p style="text-align: justify;"> Sangat cocok untuk yang suka warna hitam pekat, produk ini salah satu yang Best Seller dikarenakan satu2nya denim yang tidak memiliki warna indigo yaitu Full Black</p>
+           <!-- paragraph 3 -->
+            <p style="text-align: justify;"> Jenis denim ini Sanforized sehingga tidak perlu Insoak untuk pertama kali, bisa langsung dipakai, Zeldris 13 Oz sudah menggunakan Zip Button (Kancing) Ciri Khas dari Denim Vintage yang sudah tidak menggunakan Relsleting. Jahitan rantai (Chainstitch) membuat Denim yang dipakai menjadi lebih kuat untuk penggunaan Jangka Panjang dan Tenun pinggir memakai Pola Jahitan Shellstitch tidak membuat denim anda mudah robek untuk Jahitan Obras pinggiran Denim.
+             </p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- zeldris 2 -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="zeldris_2"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/zeldris.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Zeldris </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;">Zeldris  13 Oz Denim Full Black Garment berbahan Stretch membuat aktifitas keseharian lebih nyaman, denim ini sangat ringan digunakan. untuk cuttingan Zeldris 13 Oz Slim Tapered dari lutut kebawah mengkrucut.</p>
+           <!-- paragraph 2 -->
+            <p style="text-align: justify;"> Sangat cocok untuk yang suka warna hitam pekat, produk ini salah satu yang Best Seller dikarenakan satu2nya denim yang tidak memiliki warna indigo yaitu Full Black</p>
+           <!-- paragraph 3 -->
+            <p style="text-align: justify;"> Jenis denim ini Sanforized sehingga tidak perlu Insoak untuk pertama kali, bisa langsung dipakai, Zeldris 13 Oz sudah menggunakan Zip Button (Kancing) Ciri Khas dari Denim Vintage yang sudah tidak menggunakan Relsleting. Jahitan rantai (Chainstitch) membuat Denim yang dipakai menjadi lebih kuat untuk penggunaan Jangka Panjang dan Tenun pinggir memakai Pola Jahitan Shellstitch tidak membuat denim anda mudah robek untuk Jahitan Obras pinggiran Denim.
+             </p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- zeldris manekin -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="zeldris-manekin"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/zeldris.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Zeldris </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 14.6 USDT </h3>
+         <p style="text-align: justify;">Zeldris  13 Oz Denim Full Black Garment berbahan Stretch membuat aktifitas keseharian lebih nyaman, denim ini sangat ringan digunakan. untuk cuttingan Zeldris 13 Oz Slim Tapered dari lutut kebawah mengkrucut.</p>
+           <!-- paragraph 2 -->
+            <p style="text-align: justify;"> Sangat cocok untuk yang suka warna hitam pekat, produk ini salah satu yang Best Seller dikarenakan satu2nya denim yang tidak memiliki warna indigo yaitu Full Black</p>
+           <!-- paragraph 3 -->
+            <p style="text-align: justify;"> Jenis denim ini Sanforized sehingga tidak perlu Insoak untuk pertama kali, bisa langsung dipakai, Zeldris 13 Oz sudah menggunakan Zip Button (Kancing) Ciri Khas dari Denim Vintage yang sudah tidak menggunakan Relsleting. Jahitan rantai (Chainstitch) membuat Denim yang dipakai menjadi lebih kuat untuk penggunaan Jangka Panjang dan Tenun pinggir memakai Pola Jahitan Shellstitch tidak membuat denim anda mudah robek untuk Jahitan Obras pinggiran Denim.
+             </p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- lantai 2 modal pop up -->
+<!-- backpack army -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="backpack_army"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/daypack_army.png" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Backpack Olive </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 13 USDT </h3>
+         <p>Daypack dengan desain minimalis yang berkesan mature ini dilengkapi dengan laptop case 14" di dalamnya. Daypack ini berukuran medium namun bisa memuat banyak barang yang kamu perlu bawa setiap hari.</p>
+
+<p>Available Colors: Navy, Black, Olive</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- backpack black -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="backpack_black"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/daypack_black.png" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Backpack Black </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 13 USDT </h3>
+         <p>Daypack dengan desain minimalis yang berkesan mature ini dilengkapi dengan laptop case 14" di dalamnya. Daypack ini berukuran medium namun bisa memuat banyak barang yang kamu perlu bawa setiap hari.</p>
+
+<p>Available Colors: Navy, Black, Olive</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- backpack navy -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="backpack_navy"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/daypack_navy.png" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Backpack Navy </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 13 USDT </h3>
+         <p>Daypack dengan desain minimalis yang berkesan mature ini dilengkapi dengan laptop case 14" di dalamnya. Daypack ini berukuran medium namun bisa memuat banyak barang yang kamu perlu bawa setiap hari.</p>
+
+<p>Available Colors: Navy, Black, Olive</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- meshminiarmy -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="meshmini_army"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/minimesh_army.png" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Meshmini Olive </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 8.5 USDT </h3>
+         <p>Tas mini berjenis sling bag ini didesain spesial untuk menjadi teman kamu beraktivitas setiap hari. Sesuai dengan namanya, Mesh Mini Bag memiliki jaring di bagian depan yang bisa kamu gunakan untuk menyimpan barang-barang yang kamu ingin pamerkan.</p>
+
+<p>Available colors: Navy, Black, Olive</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- meshminiblack -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="meshmini_black"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/minimesh_black.png" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Meshmini Black </h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 8.5 USDT </h3>
+         <p>Tas mini berjenis sling bag ini didesain spesial untuk menjadi teman kamu beraktivitas setiap hari. Sesuai dengan namanya, Mesh Mini Bag memiliki jaring di bagian depan yang bisa kamu gunakan untuk menyimpan barang-barang yang kamu ingin pamerkan.</p>
+
+<p>Available colors: Navy, Black, Olive</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- meshmininavy -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="meshmini_navy"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/minimesh_navy.png" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Meshmini Navy</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 8.5 USDT </h3>
+         <p>Tas mini berjenis sling bag ini didesain spesial untuk menjadi teman kamu beraktivitas setiap hari. Sesuai dengan namanya, Mesh Mini Bag memiliki jaring di bagian depan yang bisa kamu gunakan untuk menyimpan barang-barang yang kamu ingin pamerkan.</p>
+
+<p>Available colors: Navy, Black, Olive</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- minibagblack -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="mini_black"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/minibag_army.png" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Mini Bag Black</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 7.8 USDT </h3>
+         <p>Mini Bag adalah tas berjenis sling bag dengan fabric premium. Artikel ini memiliki 2 ruang extra dengan resleting di depannya untuk memudahkan kamu memisahkan barang mana yang mau ditaruh di mana.</p>
+
+         <p>Available colors: Navy, Black, Olive</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- minibagarmy -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="mini_army"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/minibag_black.png" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Mini Bag Olive</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 7.8 USDT </h3>
+         <p>Mini Bag adalah tas berjenis sling bag dengan fabric premium. Artikel ini memiliki 2 ruang extra dengan resleting di depannya untuk memudahkan kamu memisahkan barang mana yang mau ditaruh di mana.</p>
+
+         <p>Available colors: Navy, Black, Olive</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- minibagnavy -->
+
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="mini_navy"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/minibag_navy.png" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Mini Bag Navy</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 7.8 USDT </h3>
+         <p>Mini Bag adalah tas berjenis sling bag dengan fabric premium. Artikel ini memiliki 2 ruang extra dengan resleting di depannya untuk memudahkan kamu memisahkan barang mana yang mau ditaruh di mana.</p>
+
+         <p>Available colors: Navy, Black, Olive</p>
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- weistbagarmy -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="weistbag_army"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/zeldris.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Waist Bag Army</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 9.2 USDT </h3>
+         <p>The Essential Waist-bag dibuat dari cordura fabric dengan cuttingan yang unik, berbeda dari waist bag pada umumnya. Ukurannya yang compact dengan pilihan warna edgy, akan jadi pilihan fashion item terbaik untuk melengkapi look casual kamu. Waist Bag ini juga dilengkapi dengan rubber tag di bagian resleting yang akan menjadi sebuah statement pada artikel ini.</p>
+         <p>
+         Available colors: Navy, Black, Olive
+         </p>
+         
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- weistbagblack -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="weistbag_black"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/zeldris.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Waist Bag Black</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 9.2 USDT </h3>
+         <p>The Essential Waist-bag dibuat dari cordura fabric dengan cuttingan yang unik, berbeda dari waist bag pada umumnya. Ukurannya yang compact dengan pilihan warna edgy, akan jadi pilihan fashion item terbaik untuk melengkapi look casual kamu. Waist Bag ini juga dilengkapi dengan rubber tag di bagian resleting yang akan menjadi sebuah statement pada artikel ini.</p>
+         <p>
+         Available colors: Navy, Black, Olive
+         </p>
+         
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- weistbagnavy -->
+<div
+ class="modal fade modal-fullscreen footer-to-bottom"
+ id="weistbag_navy"
+ tabindex="0"
+ role="dialog"
+ aria-labelledby="modal"
+ aria-hidden="true">
+   
+ <div class="modal-dialog animated fadeInDown">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button
+         type="button"
+         class="close"
+         data-dismiss="modal"
+         aria-hidden="true"
+       >
+       <i class="fa fa-times" aria-hidden="true"></i>
+       </button>
+       <img src="./asset/logo.png" class="img-fluid logo-container">
+     </div>
+     <div class="modal-body">
+     
+       <div class="row">
+             <div class="col-xs-12 col-md-6 col-sm-push-6">
+              
+                  <img src="./asset/image/zeldris.jpg" 
+                  class="img-responsive"
+                  alt="image">
+           </div>  
+         
+
+         <div class="col-xs-12 col-md-6 col-sm-pull-6 ">
+           <div style="margin: 1 rem ;">
+         <!-- Name product -->
+       <h2>Waist Bag Navy</h2>
+         </div>
+         <!-- harga -->
+         <h3 style="font-weight:700;"> 9.2 USDT </h3>
+         <p>The Essential Waist-bag dibuat dari cordura fabric dengan cuttingan yang unik, berbeda dari waist bag pada umumnya. Ukurannya yang compact dengan pilihan warna edgy, akan jadi pilihan fashion item terbaik untuk melengkapi look casual kamu. Waist Bag ini juga dilengkapi dengan rubber tag di bagian resleting yang akan menjadi sebuah statement pada artikel ini.</p>
+         <p>
+         Available colors: Navy, Black, Olive
+         </p>
+         
+
+     </div>
+     </div>
+     </div>
+   </div>
+ </div>
+</div>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
