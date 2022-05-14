@@ -1,0 +1,21 @@
+{
+    "name": "MetaStore Pridenjoy",
+    "short_name": "Metastore",
+    "lang": "en-US",
+    "icons": [
+        {
+          "src": "./asset/logo.png",
+          "sizes": "256x256",
+          "type": "image/png"
+        },
+        {
+          "src": "./asset/logo.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white"
+  }
