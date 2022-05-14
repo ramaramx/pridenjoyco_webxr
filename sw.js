@@ -1,5 +1,5 @@
 let cacheName = "pridenjoy";
-let filesToCache = ["/", "index.html", "style.css", "bride.js"];
+let filesToCache = ["/", "/index.html", "/style.css", "/bride.js"];
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener("install", (e) => {
