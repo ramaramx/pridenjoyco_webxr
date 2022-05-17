@@ -8,7 +8,7 @@ body, html {
 /* Small Devices, Phones */ 
 @media only screen and (min-width : 375px) {
   h2 
-    font-size:16px;}
+   { font-size:16px;}
     h4 { font-size: 1rem;
       font-weight: 400;
       text-align: center;
