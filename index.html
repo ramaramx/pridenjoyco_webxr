@@ -91,7 +91,11 @@ crossorigin="anonymous"></script>
 <!-- navmesh constraint -->
 
     <a-scene
-    
+    device-orientation-permission-ui="enabled: false"
+    renderer="antialias: true;
+                   colorManagement: true;
+                   sortObjects: true;
+                   physicallyCorrectLights: true;"
 		background="color:skyblue;"
             reflection="directionalLight:#dirlight;"
 		shadow="type: pcfsoft"
@@ -1259,7 +1263,7 @@ crossorigin="anonymous"></script>
                        data-toggle="modal"
                        data-target="#modal1" 
                       src="#logo" rotation="0 -90 0" position="-0.98526 1.4 -0.01474" scale="0.5 0.5 0.5"
-                      sound="src: #bgmusic; on: click; autoplay:true; loop:true; poolSize: 1;"
+                      sound="src: #bgmusic; on: click; autoplay:true; loop:true; poolSize: 1; rolloffFactor : 1"
                        ></a-image>
            
             </a-entity>
