@@ -153,9 +153,9 @@ body.AR-container {
   padding: 25px 25px;
   border-radius: 35px;
   opacity: 1;
-  
+  transition: opacity .5s ease;
   cursor: pointer;
-  background-color: #292929;
+  background-color: #004f87;
   letter-spacing: 1px;
 }
 
