@@ -1,5 +1,10 @@
 <html>
   <head>
+    <script>
+      // WebXR requires https: to work so ensure redirected if needed.
+      if (location.hostname !== 'localhost' && window.location.protocol === 'http:') window.location.protocol = 'https:';
+    </script>
+  
     
 <!-- aframe -->
 <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@0d23f9b21c33ab6821046ce95835492cb84996c5/dist/aframe-master.min.js"></script>
@@ -42,7 +47,7 @@ crossorigin="anonymous"></script>
 
     
     <!-- css + javascript splash animation -->
-<link href="style.css" rel="stylesheet">
+
 <script src="main.js"></script>
 
 
@@ -56,6 +61,7 @@ crossorigin="anonymous"></script>
     <meta property="og:image" content="./asset/logo.png" />
     <meta name="apple-mobile-web-app-capable" content="yes"> 
 
+    <link rel="stylesheet" href="style.css" >
   </head>
   
   <body>
@@ -79,10 +85,7 @@ crossorigin="anonymous"></script>
   <div class="start-button" style="text-align: center; margin-bottom: 0.5vh;">Start To Enter Room</div>
   
 </div>
-  <!-- <div class="col-xs-12 col-sm-3 col-md-2">
-  <div class="start-button-vr" style="text-align: center;">
-  <a class="btn btn-link" style="color: #ffffff;" href="entervr.html" role="button"> Enter VR </a></div>
-</div> -->
+
 </div>
 </div>
 
@@ -91,11 +94,7 @@ crossorigin="anonymous"></script>
 <!-- navmesh constraint -->
 
     <a-scene
-    device-orientation-permission-ui="enabled: false"
-    renderer="antialias: true;
-                   colorManagement: true;
-                   sortObjects: true;
-                   physicallyCorrectLights: true;"
+    renderer="alpha:true;physicallyCorrectLights:true;colorManagement:true;exposure:2;toneMapping:ACESFilmic;"
 		background="color:skyblue;"
             reflection="directionalLight:#dirlight;"
 		shadow="type: pcfsoft"
