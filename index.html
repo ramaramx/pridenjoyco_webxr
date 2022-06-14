@@ -95,9 +95,9 @@ crossorigin="anonymous"></script>
 		background="color:skyblue;"
     reflection="directionalLight:#dirlight;"
 		shadow="type: pcfsoft"
-		gltf-model="dracoDecoderPath: https://cdn.jsdelivr.net/npm/three@0.129.0/examples/js/libs/draco/gltf/;"
+		gltf-model="dracoDecoderPath: https://cdn.jsdelivr.net/npm/three@0.129.0/examples/js/libs/draco/gltf/draco_decoder.js;"
     exposure="2"
-    stats = "false" environment="lighting:  point;  shadow:  true;  preset:  egypt;  "
+    stats = "false" environment="lighting:  ambient;  shadow:  true;  preset:  egypt;  "
     
             
     >
@@ -1277,7 +1277,7 @@ crossorigin="anonymous"></script>
            
             </a-entity>
       
-          <a-light id="dirlight" light="type: ambient" intensity="1.5" ></a-light>
+          <a-light id="dirlight" light="type: ambient" intensity="2.8" ></a-light>
       
 
 
