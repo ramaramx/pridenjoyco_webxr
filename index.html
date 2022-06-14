@@ -93,14 +93,12 @@ crossorigin="anonymous"></script>
     <a-scene
     renderer="alpha:true;physicallyCorrectLights:true;colorManagement:true;exposure:2;toneMapping:ACESFilmic;"
 		background="color:skyblue;"
-            reflection="directionalLight:#dirlight;"
+    reflection="directionalLight:#dirlight;"
 		shadow="type: pcfsoft"
 		gltf-model="dracoDecoderPath: https://cdn.jsdelivr.net/npm/three@0.129.0/examples/js/libs/draco/gltf/;"
-    exposure="1.5"
-    stats = "false" environment="lighting:false;shadow:true;preset:tron;"
-    webxr="requiredFeatures: hit-test,local-floor;
-                optionalFeatures: dom-overlay,unbounded;
-                overlayElement: #overlay;"
+    exposure="2"
+    stats = "false" environment="lighting:  point;  shadow:  true;  preset:  egypt;  "
+    
             
     >
     <a-entity id="kameraRig" 
@@ -155,6 +153,11 @@ crossorigin="anonymous"></script>
           <a-asset-item id="crypto_payment" src="./asset/monitor/crypto_payment.glb"></a-asset-item>
           <a-asset-item id="fast_pants" src="./asset/monitor/fast_pants.glb"></a-asset-item>        
       
+        
+        
+        <!-- chibi meta-->
+        <a-asset-item id="chibi_model" src="./asset/obj_file/chibi_meta.glb"></a-asset-item>
+       
         <!-- Asset Social Media  -->
       
           <a-asset-item id="facebook" src="./asset/sosmed/facebook.glb"></a-asset-item>
@@ -302,6 +305,13 @@ crossorigin="anonymous"></script>
       
         
       <!-- lantai 1 -->
+
+      <!-- chibi -->
+      <a-gltf-model 
+      src="#chibi_model"
+      shadow="cast: true"
+      position="0 1 0"
+      exposure="2"></a-gltf-model>
         <!-- model customer Service  -->   
               
           <a-gltf-model
@@ -1267,7 +1277,7 @@ crossorigin="anonymous"></script>
            
             </a-entity>
       
-          <a-light id="dirlight" light="type: ambient" intensity="1.2" ></a-light>
+          <a-light id="dirlight" light="type: ambient" intensity="1.5" ></a-light>
       
 
 
