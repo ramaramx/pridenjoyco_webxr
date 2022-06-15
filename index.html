@@ -122,11 +122,11 @@ crossorigin="anonymous"></script>
             
       <a-gltf-model src="#building-glb"
       id="building"
-      
+      exposure="1.5"
       depthwrite="true"
       window-replace="Glass"
       no-tonemapping="Light"
-      shadow="cast:false;receive:true;"
+      shadow="cast:true;"
       position="0 1 0"
     ></a-gltf-model>
     <a-entity hide-on-enter-ar rotation="0 -45 0" position="0 0 0"></a-entity>    
@@ -141,7 +141,7 @@ crossorigin="anonymous"></script>
         <!-- Building -->
        
             <audio id="bgmusic" src="./asset/musicbg.mp3" crossorigin="anonymous" allow="autoplay; fullscreen"></audio>
-            <a-asset-item id="building-glb" src="./asset/basebuilding.glb"></a-asset-item>
+            <a-asset-item id="building-glb" src="https://cdn.glitch.me/28d581ed-9a41-45c1-8804-9e2a5c9ed479/basebuilding.glb?v=1655261568850"></a-asset-item>
             <a-asset-item id="navmesh-glb" src="./asset/navmesh.glb"></a-asset-item>
         
               
@@ -156,7 +156,7 @@ crossorigin="anonymous"></script>
         
         
         <!-- chibi meta-->
-        <a-asset-item id="chibi_model" src="./asset/obj_file/chibi_meta.glb"></a-asset-item>
+        <a-asset-item id="chibi_model" src="https://cdn.glitch.me/28d581ed-9a41-45c1-8804-9e2a5c9ed479/chibi_meta.glb?v=1655261517523"></a-asset-item>
        
         <!-- Asset Social Media  -->
       
@@ -1277,7 +1277,7 @@ crossorigin="anonymous"></script>
            
             </a-entity>
       
-          <a-light id="dirlight" light="type: ambient" intensity="2.8" ></a-light>
+          <a-light id="dirlight" light="type: ambient" intensity="1" ></a-light>
       
 
 

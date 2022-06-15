@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 loading.style.display = 'none';
                 splash.style.backgroundColor = 'rgba(34, 149, 214, 0.5)';
                 startButton.style.opacity = 1;
-            }, 500);
+            }, 1000);
     });
 
     startButton.addEventListener('click', function (e) {
