@@ -38,27 +38,33 @@ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 crossorigin="anonymous"></script>
 
     <!-- boostrap -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>    
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
 
     
     <!-- css + javascript splash animation -->
-
+    <link rel="stylesheet" href="style.css" >
 <script src="main.js"></script>
 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://pridenjoyco.id/">
 
-    <title>Web3 Pride n Joy</title>
+
+  <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0618/9806/4059/files/logo_pnj_2022_2_32x32.png?v=1653008024" type="image/png">
+
+    <title>Welcome To Metastore</title>
+    <meta name="description" content="Made With Pride N Joy">
+    <meta property="og:site_name" content="Pride N Joy Co">
+    <meta property="og:url" content="https://pridenjoyco.id/">
+    <meta property="og:title" content="Pride N Joy Co">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Made With Pride N Joy">
+
     
-    <meta name="theme-color" content="white" />
-    <meta property="og:title" content="Web 3 Pride n Joy" />
-    <meta property="og:url" content="https:/web3.pridenjoyco.id/" />
-    <meta name="description" content="Web 3 Pride n Joy" />
-    <meta property="og:description" content="Web 3 Pride n Joy" />
-    <meta property="og:image" content="./asset/logo.png" />
-    <meta name="apple-mobile-web-app-capable" content="yes"> 
-
-    <link rel="stylesheet" href="style.css" >
   </head>
   
   <body>
@@ -73,17 +79,17 @@ crossorigin="anonymous"></script>
   <h2> Welcome To Pride N Joy Metastore </h2>
   <div class="instructions">
     <h4> Instructions Move Using WASD </h4>
-    </div>
-  <div class="loading">
   </div>
+
+  <div class="loading"></div>
   
   <div class="row">
       <div class="col-xs-12 col-sm-5 col-md-3">
   <div class="start-button" style="text-align: center; margin-bottom: 0.5vh;">Start To Enter Room</div>
   
-</div>
+    </div>
 
-</div>
+  </div>
 </div>
 
 <!-- end -->
@@ -97,15 +103,14 @@ crossorigin="anonymous"></script>
 		shadow="type: pcfsoft"
 		gltf-model="dracoDecoderPath: https://cdn.jsdelivr.net/npm/three@0.129.0/examples/js/libs/draco/gltf/draco_decoder.js;"
     exposure="2"
-    stats = "false" environment="lighting:  ambient;  shadow:  true;  preset:  egypt;  "
-    
-            
     >
+
     <a-entity id="kameraRig" 
     position="-10 1 1.5"
     rotation="0 -105 0"
     movement-controls="speed: 0.090"
-    onload-move-camera>
+    onload-move-camera
+    >
             <a-entity  id="camera"
             camera
             look-controls="pointerLockEnabled: false"
@@ -129,7 +134,7 @@ crossorigin="anonymous"></script>
       shadow="cast:true;"
       position="0 1 0"
     ></a-gltf-model>
-    <a-entity hide-on-enter-ar rotation="0 -45 0" position="0 0 0"></a-entity>    
+    <a-entity hide-on-enter-ar rotation="0 -45 0" position="0 0 0"  environment="lighting:none;shadow:true;preset: osiris;"></a-entity>    
 
       <!-- end -->
       <!-- <a-asset-item id="speaker" src="./asset/speaker.fbx"></a-asset-item> -->
@@ -156,7 +161,7 @@ crossorigin="anonymous"></script>
         
         
         <!-- chibi meta-->
-        <a-asset-item id="chibi_model" src="https://cdn.glitch.me/28d581ed-9a41-45c1-8804-9e2a5c9ed479/chibi_meta.glb?v=1655261517523"></a-asset-item>
+        
        
         <!-- Asset Social Media  -->
       
@@ -307,11 +312,7 @@ crossorigin="anonymous"></script>
       <!-- lantai 1 -->
 
       <!-- chibi -->
-      <a-gltf-model 
-      src="#chibi_model"
-      shadow="cast: true"
-      position="0 1 0"
-      exposure="2"></a-gltf-model>
+      
         <!-- model customer Service  -->   
               
           <a-gltf-model
@@ -343,7 +344,7 @@ crossorigin="anonymous"></script>
           </a-gltf-model>
       
           <a-gltf-model
-          href="https://pridenjoyco.id/fast_pants"
+          href="fastpants.pridenjoyco.id/fastpants"
           target="_blank"
                      src="#fast_pants"
                      rotation="" 
@@ -1275,7 +1276,7 @@ crossorigin="anonymous"></script>
                       sound="src: #bgmusic; on: click; autoplay:true; loop:true; poolSize: 1; rolloffFactor : 1"
                        ></a-image>
            
-            </a-entity>
+            
       
           <a-light id="dirlight" light="type: ambient" intensity="1" ></a-light>
       
