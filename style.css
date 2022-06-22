@@ -18,29 +18,33 @@ font-weight: 600;}
     }
 }
   /* Extra Small Devices, Phones */ 
-  @media only screen and (min-width : 425px) {
+  @media only screen and (max-width : 425px) {
     h2 {
       font-size:18px;}
-      h4 { font-size: 1.5rem;
+      h4 {     font-size: 12px;
         font-weight: 400;
         text-align: center;
+        margin-bottom: 25%;
     
       }
   }
 
   /* Small Devices, Tablets */
-  @media only screen and (min-width : 768px) {
+  @media only screen and (max-width : 768px) {
     h1 {font-size: 2.5rem;
       text-align: left;
     }
-    h2 {font-size: 3rem;
-      font-weight: 600;
-      text-align: left;
+    h2 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+     
     }
     
-    h4 { font-size: 1.5rem;
-      text-align: left;
+    h4 { font-size: 12px;
       font-weight: 400;
+      text-align: center;
+      margin-bottom: 15%;
     }
   }
 
@@ -52,12 +56,15 @@ font-weight: 600;}
     h2 {font-size: 3rem;
       font-weight: 600;
       text-align: left;
+      
     
     }
     
     h4 { font-size: 1.5rem;
       text-align: left;
       font-weight: 400;
+      margin-bottom: 5%;
+      text-align: center;
     
     }
   }
@@ -73,13 +80,16 @@ font-weight: 600;}
     
     h4 { font-size: 1.5rem;
       font-weight: 400;
+      text-align: start;
     
     }
   }
 
+
+
 .logo-display{ 
   position: fixed;
-    background-color: rgba(0, 0, 0, 0.545);
+    
     display: block;
     left: 0;
     top: 0;
@@ -133,6 +143,7 @@ body.AR-container {
 #splash .loading {
   width: 24px;
   height: 24px;
+  left: 50%;
   border-radius: 50%;
   border: 0.25rem solid rgba(255, 255, 255, 0.2);
   border-top-color: #fff;
@@ -159,7 +170,15 @@ body.AR-container {
   letter-spacing: 1px;
 }
 
-
+.two-button {
+  padding: 25px 25px;
+  border-radius: 35px;
+  opacity: 1;
+  transition: opacity .5s ease;
+  cursor: pointer;
+  background-color: #004f87;
+  letter-spacing: 1px;
+}
 #splash .credits {
   position: absolute;
   left: 2em;
@@ -201,6 +220,7 @@ body.AR-container {
 #anchor-scene-button {
   display: none;
   position: fixed;
+  
   top: 20px;
   right: 20px;
   width: 55px;
@@ -342,12 +362,46 @@ body.AR-container {
   padding-top: inherit;
 }
 
-@media (min-width: 768px){
+.col-md-1{
+  width: 4%;
+}
+
+@media (max-width: 768px){
 .col-sm-push-6 {
     left: 0%;
 }
+
+.col-md-1{
+  width: 100%;
 }
-@media (min-width: 768px){
+
+#splash .start-button {
+  font-size: 12px;
+  padding: 15px 15px;
+  border-radius: 35px;
+  opacity: 0;
+  transition: opacity .5s ease;
+  cursor: pointer;
+  background-color: #004f87;
+  letter-spacing: 1px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.two-button {
+  
+  font-size: 12px;
+  padding: 15px 15px;
+  opacity: 1;
+  transition: opacity .5s ease;
+  cursor: pointer;
+  background-color: #004f87;
+  letter-spacing: 1px;
+  margin-left: 75px;
+    margin-right: 75px;
+}
+}
+@media (max-width: 768px){
 .col-sm-pull-6 {
     right: 0%;
 }
